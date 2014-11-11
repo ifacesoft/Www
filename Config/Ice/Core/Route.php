@@ -11,7 +11,7 @@ return [
                 ],
                 'main' => 'Wi:Index',
             ],
-            'layout' => 'Wi:Layout_Main',
+            'layout' => 'Wi:Layout_Landing',
         ],
         'weight' => 10000,
     ],

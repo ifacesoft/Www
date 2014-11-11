@@ -24,6 +24,7 @@ return [
             '/wwwice.global$/' => 'production',
             '/wwwice.test$/' => 'test',
             '/wwwice.local$/' => 'development',
+            '/iceframework.net$/' => 'development'
         ],
     ],
 ];

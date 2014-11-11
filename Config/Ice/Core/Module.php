@@ -9,6 +9,6 @@ return [
         'source' => '',
     ],
     'modules' => [
-        '/home/dp/PhpstormProjects/ifs/Ice/' => 'master',
+        ICE_DIR => 'master',
     ],
 ];
