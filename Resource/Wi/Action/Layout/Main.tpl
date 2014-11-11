@@ -46,11 +46,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav nav-justified" style="width: 80%;">
-<<<<<<< HEAD
-                    {*<li style="float: none;"><a href="/handbook">Handbook</a></li>*}
-=======
                     <li style="float: none;"><a href="/handbook">Handbook</a></li>
->>>>>>> 41a9aec09a3f21337a6b8555fee0e35b966df282
                     <li style="float: none;"><a href="/cookbook">Cookbook</a></li>
                     <li style="float: none;"><a href="/api">Api</a></li>
                     {*<li style="float: none;"><a href="http://iceframework.net/faq">Faq</a></li>*}
@@ -98,11 +94,7 @@
 
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-<<<<<<< HEAD
-                        {*<li><a href="/handbook">Handbook</a></li>*}
-=======
                         <li><a href="/handbook">Handbook</a></li>
->>>>>>> 41a9aec09a3f21337a6b8555fee0e35b966df282
                         <li><a href="/cookbook">Cookbook</a></li>
                         <li><a href="/api">Api</a></li>
                         {*<li><a href="http://iceframework.net/faq">Faq</a></li>*}
