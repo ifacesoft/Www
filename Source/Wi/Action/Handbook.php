@@ -8,7 +8,7 @@ use Ice\Data\Provider\Router;
 use Ice\View\Render\Smarty;
 
 /**
- * Class Cookbook
+ * Class Handbook
  *
  * @see Ice\Core\Action
  * @see Ice\Core\Action_Context;
@@ -16,7 +16,7 @@ use Ice\View\Render\Smarty;
  * @author dp
  * @version stable_0
  */
-class Cookbook extends Action
+class Handbook extends Action
 {
     /**  public static $config = [
      *      'afterActions' => [],          // actions
@@ -33,7 +33,7 @@ class Cookbook extends Action
      */
     public static $config = [
         'viewRenderClassName' => 'Ice:Smarty',
-        'afterActions' => 'Wi:Cookbook_Menu',
+        'afterActions' => 'Wi:Handbook_Menu',
         'inputDataProviderKeys' => Router::DEFAULT_KEY,
     ];
 
@@ -50,8 +50,8 @@ class Cookbook extends Action
 
         return [
             'article' => !empty($input['article'])
-                ? Smarty::getInstance()->fetch('Wi\Action\Cookbook_' . $input['article'])
-                : Smarty::getInstance()->fetch('Wi\Action\Cookbook_own_layout')
+                ? Smarty::getInstance()->fetch('Wi\Action\Handbook_' . $input['article'])
+                : Smarty::getInstance()->fetch('Wi\Action\Handbook_getting_started')
         ];
     }
 }

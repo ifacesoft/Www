@@ -48,9 +48,15 @@
                 <ul class="nav navbar-nav nav-justified" style="width: 80%;">
                     <li style="float: none;"><a href="/handbook">Handbook</a></li>
                     <li style="float: none;"><a href="/cookbook">Cookbook</a></li>
-                    <li style="float: none;"><a href="/api">Api</a></li>
-                    {*<li style="float: none;"><a href="http://iceframework.net/faq">Faq</a></li>*}
+                    <li style="float: none;"><a href="/api/0.0">Api</a></li>
+                    <li style="float: none;"><a href="/faq">Faq</a></li>
                     {*<li class="last" style="float: none;"><a href="http://iceframework.net/demo">Live Demo</a></li>*}
+                </ul>
+                <ul class="nav navbar-nav right-nav">
+                    <a href="https://github.com/ifacesoft/Ice/issues/new" type="button"
+                       class="btn btn-danger navbar-btn" target="_blank">
+                        Сообщить об ошибке
+                    </a>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -96,8 +102,8 @@
                     <ul class="nav navbar-nav">
                         <li><a href="/handbook">Handbook</a></li>
                         <li><a href="/cookbook">Cookbook</a></li>
-                        <li><a href="/api">Api</a></li>
-                        {*<li><a href="http://iceframework.net/faq">Faq</a></li>*}
+                        <li><a href="/api/0.0">Api</a></li>
+                        <li><a href="/faq">Faq</a></li>
                         {*<li><a href="http://iceframework.net/demo">Live Demo</a></li>*}
                     </ul>
                     <div class="nav navbar-nav navbar-right">{literal}
@@ -168,5 +174,6 @@
             </div>
         </div>
     </div>
+</div>
 </body>
 </html>

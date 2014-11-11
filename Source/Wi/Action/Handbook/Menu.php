@@ -3,12 +3,10 @@ namespace Wi\Action;
 
 use Ice\Core\Action;
 use Ice\Core\Action_Context;
-use Ice\Core\Logger;
-use Ice\Data\Provider\Router;
-use Ice\View\Render\Smarty;
+use Ice\Helper\Emmet;
 
 /**
- * Class Cookbook
+ * Class Handbook_Menu
  *
  * @see Ice\Core\Action
  * @see Ice\Core\Action_Context;
@@ -16,7 +14,7 @@ use Ice\View\Render\Smarty;
  * @author dp
  * @version stable_0
  */
-class Cookbook extends Action
+class Handbook_Menu extends Action
 {
     /**  public static $config = [
      *      'afterActions' => [],          // actions
@@ -33,8 +31,7 @@ class Cookbook extends Action
      */
     public static $config = [
         'viewRenderClassName' => 'Ice:Smarty',
-        'afterActions' => 'Wi:Cookbook_Menu',
-        'inputDataProviderKeys' => Router::DEFAULT_KEY,
+        'layout' => Emmet::PANEL_BODY
     ];
 
     /**
@@ -46,12 +43,5 @@ class Cookbook extends Action
      */
     protected function run(array $input, Action_Context $actionContext)
     {
-        $actionContext->addAction('Wi:Comment', ['article' => $input['article']]);
-
-        return [
-            'article' => !empty($input['article'])
-                ? Smarty::getInstance()->fetch('Wi\Action\Cookbook_' . $input['article'])
-                : Smarty::getInstance()->fetch('Wi\Action\Cookbook_own_layout')
-        ];
     }
 }

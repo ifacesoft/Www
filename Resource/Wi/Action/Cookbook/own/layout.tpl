@@ -147,7 +147,4 @@ class Layout_Main extends Layout
 ', true)}
 </p>
 
-
-<div class="alert alert-success" role="alert">
-    Вот вроде бы и все.
-</div>
+Вот вроде бы и все.

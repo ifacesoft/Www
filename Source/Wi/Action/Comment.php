@@ -1,24 +1,21 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: dp
+ * Date: 11/11/14
+ * Time: 7:29 PM
+ */
+
 namespace Wi\Action;
+
 
 use Ice\Core\Action;
 use Ice\Core\Action_Context;
-use Ice\Core\Logger;
-use Ice\Data\Provider\Router;
-use Ice\View\Render\Smarty;
 
-/**
- * Class Cookbook
- *
- * @see Ice\Core\Action
- * @see Ice\Core\Action_Context;
- * @package Wi\Action;
- * @author dp
- * @version stable_0
- */
-class Cookbook extends Action
-{
-    /**  public static $config = [
+class Comment extends Action{
+
+    /**
+     *  public static $config = [
      *      'afterActions' => [],          // actions
      *      'layout' => null,               // Emmet style layout
      *      'template' => null,             // Template of view
@@ -31,14 +28,11 @@ class Cookbook extends Action
      *      'cacheDataProviderKey' => ''    // Cache data provider key
      *  ];
      */
-    public static $config = [
-        'viewRenderClassName' => 'Ice:Smarty',
-        'afterActions' => 'Wi:Cookbook_Menu',
-        'inputDataProviderKeys' => Router::DEFAULT_KEY,
-    ];
+     public static $config = [
+           'viewRenderClass' => 'Ice:Smarty'
+      ];
 
-    /**
-     * Run action
+    /** Run action
      *
      * @param array $input
      * @param Action_Context $actionContext
@@ -46,12 +40,6 @@ class Cookbook extends Action
      */
     protected function run(array $input, Action_Context $actionContext)
     {
-        $actionContext->addAction('Wi:Comment', ['article' => $input['article']]);
-
-        return [
-            'article' => !empty($input['article'])
-                ? Smarty::getInstance()->fetch('Wi\Action\Cookbook_' . $input['article'])
-                : Smarty::getInstance()->fetch('Wi\Action\Cookbook_own_layout')
-        ];
+        // TODO: Implement run() method.
     }
 }
