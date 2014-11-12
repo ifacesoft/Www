@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
     <title>{$title}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {$Resources[0]}
@@ -48,7 +48,7 @@
                 <ul class="nav navbar-nav nav-justified" style="width: 80%;">
                     <li style="float: none;"><a href="/handbook">Handbook</a></li>
                     <li style="float: none;"><a href="/cookbook">Cookbook</a></li>
-                    <li style="float: none;"><a href="/api/0.0">Api</a></li>
+                    <li style="float: none;"><a href="/resource/api/Ice/0.0">Api</a></li>
                     <li style="float: none;"><a href="/faq">Faq</a></li>
                     {*<li class="last" style="float: none;"><a href="http://iceframework.net/demo">Live Demo</a></li>*}
                 </ul>
@@ -102,7 +102,7 @@
                     <ul class="nav navbar-nav">
                         <li><a href="/handbook">Handbook</a></li>
                         <li><a href="/cookbook">Cookbook</a></li>
-                        <li><a href="/api/0.0">Api</a></li>
+                        <li><a href="/resource/api/Ice/0.0/">Api</a></li>
                         <li><a href="/faq">Faq</a></li>
                         {*<li><a href="http://iceframework.net/demo">Live Demo</a></li>*}
                     </ul>
