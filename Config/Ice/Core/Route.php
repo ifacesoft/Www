@@ -21,7 +21,7 @@ return [
             'actions' => [
                 'title' => [
                     'Ice:Title' => [
-                        'title' => 'Ice Handbook',
+                        'title' => 'Ice - Руководство (Handbook)',
                     ],
                 ],
                 'main' => 'Wi:Handbook',
@@ -38,7 +38,7 @@ return [
             'actions' => [
                 'title' => [
                     'Ice:Title' => [
-                        'title' => 'Ice Cookbook',
+                        'title' => 'Ice - Полезные статьи (Cookbook)',
                     ],
                 ],
                 'main' => 'Wi:Cookbook',

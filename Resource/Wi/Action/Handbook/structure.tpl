@@ -1,4 +1,4 @@
-<h1>Структура приложения</h1>
+<h2>Структура приложения</h2>
 <pre><code style="font-size: 10px;">  _cache/                 Cache files for separate projects
   _log/                   Log files for separate projects
   _resource/              Resource files (javascript, css, images etc.) for separate projects

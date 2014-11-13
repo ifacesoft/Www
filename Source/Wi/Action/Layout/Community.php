@@ -3,9 +3,10 @@ namespace Wi\Action;
 
 use Ice\Action\Layout;
 use Ice\Core\Action;
+use Ice\Core\Action_Context;
 
 /**
- * Class Layout_Landing
+ * Class Layout_Community
  *
  * @see Ice\Core\Action
  * @see Ice\Core\Action_Context;
@@ -13,7 +14,7 @@ use Ice\Core\Action;
  * @author dp
  * @version stable_0
  */
-class Layout_Landing extends Layout
+class Layout_Community extends Layout
 {
     /**  public static $config = [
      *      'afterActions' => [],          // actions
@@ -29,7 +30,24 @@ class Layout_Landing extends Layout
      *  ];
      */
     public static $config = [
-        'afterActions' => ['Ice:Resources'],
+        'afterActions' => [
+            'Ice:Resources',
+            'Ice:Menu' => [
+                'scheme' => [
+                    'Документация' => [
+                        'Руководство (Handbook)' => '/handbook',
+                        'Полезные статьи (Cookbook)' => '/cookbook',
+                        'Исходный код (Api)' => '/resource/api/Ice/0.0',
+                        'Часто задаваемые вопросы (Faq)' => '/faq'
+                    ],
+                    'Сообщество' => [
+                        'Блог' => '/blog',
+//                        'Форум' => '/forum'
+                    ],
+//                    'Приложения' => '/apps',
+                ]
+            ]
+        ],
         'viewRenderClassName' => 'Ice:Smarty',
         'layout' => ''
     ];

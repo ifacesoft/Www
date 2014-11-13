@@ -30,7 +30,24 @@ class Layout_Main extends Layout
      *  ];
      */
     public static $config = [
-        'afterActions' => ['Ice:Resources'],
+        'afterActions' => [
+            'Ice:Resources',
+            'Ice:Menu' => [
+                'scheme' => [
+                    'Документация' => [
+                        'Руководство (Handbook)' => '/handbook',
+                        'Полезные статьи (Cookbook)' => '/cookbook',
+                        'Исходный код (Api)' => '/resource/api/Ice/0.0',
+                        'Часто задаваемые вопросы (Faq)' => '/faq'
+                    ],
+                    'Сообщество' => [
+                        'Блог' => '/blog',
+//                        'Форум' => '/forum'
+                    ],
+//                    'Приложения' => '/apps',
+                ]
+            ]
+        ],
         'viewRenderClassName' => 'Ice:Smarty',
         'layout' => ''
     ];

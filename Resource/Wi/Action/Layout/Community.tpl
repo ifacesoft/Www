@@ -28,7 +28,7 @@
     </script>
 </head>
 <body>
-<div id="Layout_Main">
+<div id="Layout_Community">
     <div id="iceMessages" class='notifications top-right'></div>
     <h1 class="container" style="font-size: 30px;">
         <a href="/">
@@ -49,7 +49,27 @@
     </nav>
 
     <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
                 {$main}
+            </div>
+            <div class="col-lg-3">
+                <script type="text/javascript" src="//vk.com/js/api/openapi.js?115"></script>
+
+                <!-- VK Widget -->
+                <div id="vk_groups"></div>
+                <script type="text/javascript">
+                    VK.Widgets.Group("vk_groups", {
+                        mode: 0,
+                        width: "220",
+                        height: "400",
+                        color1: 'FFFFFF',
+                        color2: '2B587A',
+                        color3: '5B7FA6'
+                    }, 73142573);
+                </script>
+            </div>
+        </div>
     </div>
 
     <div class="footer">
