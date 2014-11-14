@@ -9,7 +9,7 @@ return [
         'source' => '',
     ],
     'modules' => [
-//        ROOT_DIR . 'BlogIce/' => 'master',
+        ROOT_DIR . 'BlogIce/' => 'master',
         ICE_DIR => 'master',
     ],
 ];
