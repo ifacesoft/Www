@@ -1,0 +1,9 @@
+<?php
+return [
+    '<div id="1416409091.8114" class="alert alert-warning">Not_Empty: param login is not valid</div><div id="1416409091.8123" class="alert alert-warning">Length_Min: param login is not valid</div><div id="1416409091.8133" class="alert alert-warning">LettersNumbers: param login is not valid</div><div id="1416409091.8139" class="alert alert-warning">Not_Empty: param password is not valid</div><div id="1416409091.8146" class="alert alert-warning">Length_Min: param password is not valid</div><div id="1416409091.8153" class="alert alert-warning">Not_Empty: param password1 is not valid</div><div id="1416409091.816" class="alert alert-warning">Length_Min: param password1 is not valid</div><div id="1416409091.8172" class="alert alert-warning">Equal: param password1 is not valid</div>' => [
+        'ru' => '<div id="1416409091.8114" class="alert alert-warning">Not_Empty: param login is not valid</div><div id="1416409091.8123" class="alert alert-warning">Length_Min: param login is not valid</div><div id="1416409091.8133" class="alert alert-warning">LettersNumbers: param login is not valid</div><div id="1416409091.8139" class="alert alert-warning">Not_Empty: param password is not valid</div><div id="1416409091.8146" class="alert alert-warning">Length_Min: param password is not valid</div><div id="1416409091.8153" class="alert alert-warning">Not_Empty: param password1 is not valid</div><div id="1416409091.816" class="alert alert-warning">Length_Min: param password1 is not valid</div><div id="1416409091.8172" class="alert alert-warning">Equal: param password1 is not valid</div>',
+    ],
+    '<div id="1416409102.4696" class="alert alert-warning">Equal: param password1 is not valid</div>' => [
+        'ru' => '<div id="1416409102.4696" class="alert alert-warning">Equal: param password1 is not valid</div>',
+    ],
+];
