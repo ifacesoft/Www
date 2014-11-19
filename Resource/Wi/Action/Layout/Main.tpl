@@ -49,7 +49,7 @@
     </nav>
 
     <div class="container">
-                {$main}
+        {$main}
     </div>
 
     <div class="footer">
