@@ -1,12 +1,12 @@
 <?php
 return [
-    'time' => '2014-11-19 12:35:55',
-    'revision' => '11191235',
+    'time' => '2014-11-21 13:54:36',
+    'revision' => '11211354',
     'scheme' => 'www',
     'modelClass' => 'Bi\\Model\\Post',
     'prefix' => 'bi',
     'columns' => [
-        'post_id' => [
+        'post_pk' => [
             'extra' => 'auto_increment',
             'type' => 'bigint(20)',
             'dataType' => 'bigint',
@@ -94,7 +94,7 @@ return [
     'indexes' => [
         'PRIMARY KEY' => [
             'PRIMARY' => [
-                1 => 'post_id',
+                1 => 'post_pk',
             ],
         ],
         'FOREIGN KEY' => [

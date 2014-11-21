@@ -1,12 +1,12 @@
 <?php
 return [
-    'time' => '2014-11-19 12:35:55',
-    'revision' => '11191235',
+    'time' => '2014-11-21 13:54:36',
+    'revision' => '11211354',
     'scheme' => 'www',
     'modelClass' => 'Ice\\Model\\Account',
     'prefix' => 'ice',
     'columns' => [
-        'account_id' => [
+        'account_pk' => [
             'extra' => 'auto_increment',
             'type' => 'bigint(20)',
             'dataType' => 'bigint',
@@ -70,7 +70,7 @@ return [
     'indexes' => [
         'PRIMARY KEY' => [
             'PRIMARY' => [
-                1 => 'account_id',
+                1 => 'account_pk',
             ],
         ],
         'FOREIGN KEY' => [

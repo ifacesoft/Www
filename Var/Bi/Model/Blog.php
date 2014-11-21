@@ -1,12 +1,12 @@
 <?php
 return [
-    'time' => '2014-11-19 12:35:55',
-    'revision' => '11191235',
+    'time' => '2014-11-21 13:54:36',
+    'revision' => '11211354',
     'scheme' => 'www',
     'modelClass' => 'Bi\\Model\\Blog',
     'prefix' => 'bi',
     'columns' => [
-        'blog_id' => [
+        'blog_pk' => [
             'extra' => 'auto_increment',
             'type' => 'bigint(20)',
             'dataType' => 'bigint',
@@ -20,11 +20,11 @@ return [
         ],
         'blog_name' => [
             'extra' => '',
-            'type' => 'varchar(255)',
-            'dataType' => 'varchar',
-            'length' => '255',
-            'characterSet' => 'utf8',
-            'nullable' => false,
+            'type' => 'bigint(20)',
+            'dataType' => 'bigint',
+            'length' => '19,0',
+            'characterSet' => null,
+            'nullable' => true,
             'default' => null,
             'comment' => '',
             'is_primary' => false,
@@ -36,7 +36,7 @@ return [
             'dataType' => 'varchar',
             'length' => '255',
             'characterSet' => 'utf8',
-            'nullable' => false,
+            'nullable' => true,
             'default' => null,
             'comment' => '',
             'is_primary' => false,
@@ -56,11 +56,11 @@ return [
         ],
         'blog_active' => [
             'extra' => '',
-            'type' => 'tinyint(1)',
+            'type' => 'tinyint(4)',
             'dataType' => 'tinyint',
             'length' => '3,0',
             'characterSet' => null,
-            'nullable' => true,
+            'nullable' => false,
             'default' => '1',
             'comment' => '',
             'is_primary' => false,
@@ -72,8 +72,8 @@ return [
             'dataType' => 'timestamp',
             'length' => '0',
             'characterSet' => null,
-            'nullable' => false,
-            'default' => 'CURRENT_TIMESTAMP',
+            'nullable' => true,
+            'default' => null,
             'comment' => '',
             'is_primary' => false,
             'is_foreign' => false,
@@ -82,7 +82,7 @@ return [
     'indexes' => [
         'PRIMARY KEY' => [
             'PRIMARY' => [
-                1 => 'blog_id',
+                1 => 'blog_pk',
             ],
         ],
         'FOREIGN KEY' => [

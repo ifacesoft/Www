@@ -1,12 +1,12 @@
 <?php
 return [
-    'time' => '2014-11-19 12:35:55',
-    'revision' => '11191235',
+    'time' => '2014-11-21 13:54:36',
+    'revision' => '11211354',
     'scheme' => 'www',
     'modelClass' => 'Ice\\Model\\User',
     'prefix' => 'ice',
     'columns' => [
-        'user_id' => [
+        'user_pk' => [
             'extra' => 'auto_increment',
             'type' => 'bigint(20)',
             'dataType' => 'bigint',
@@ -80,11 +80,11 @@ return [
         ],
         'user_active' => [
             'extra' => '',
-            'type' => 'tinyint(1)',
+            'type' => 'tinyint(4)',
             'dataType' => 'tinyint',
             'length' => '3,0',
             'characterSet' => null,
-            'nullable' => true,
+            'nullable' => false,
             'default' => '1',
             'comment' => '',
             'is_primary' => false,
@@ -106,7 +106,7 @@ return [
     'indexes' => [
         'PRIMARY KEY' => [
             'PRIMARY' => [
-                1 => 'user_id',
+                1 => 'user_pk',
             ],
         ],
         'FOREIGN KEY' => [],
