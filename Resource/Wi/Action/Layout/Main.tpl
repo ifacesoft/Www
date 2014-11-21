@@ -9,7 +9,7 @@
     <title>{$title}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {$Resources[0]}
-    {if !Ice::get('Ice\Core\Environment')->isDevelopment()}
+    {if Ice::get('Ice\Core\Environment')->isProduction()}
         <script>
             (function (i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r;
@@ -71,7 +71,7 @@
                         <li><a href="/faq">Faq</a></li>
                         {*<li><a href="http://iceframework.net/demo">Live Demo</a></li>*}
                     </ul>
-                    {if !Ice::get('Ice\Core\Environment')->isDevelopment()}
+                    {if Ice::get('Ice\Core\Environment')->isProduction()}
                         <div class="nav navbar-nav navbar-right">{literal}
                                 <!-- Yandex.Metrika informer -->
                                 <a href="https://metrika.yandex.ru/stat/?id=25280492&amp;from=informer"
