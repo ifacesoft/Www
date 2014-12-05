@@ -6,7 +6,7 @@ return [
         ],
     ],
     'Ice\\Core\\Data_Source' => [
-        'www' => 'Ice:Mysqli/default',
+        'Ice:Mysqli/default' => 'test',
     ],
     'Ice\\Core\\Request' => [
         'multilocale' => false,

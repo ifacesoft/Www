@@ -4,8 +4,8 @@ return [
         'Ice/Core/Data_Provider' => [
             'Ice\\Data\\Provider\\Mysqli' => [
                 'default' => [
-                    'username' => 'www',
-                    'password' => 'www',
+                    'username' => 'root',
+                    'password' => '',
                 ],
             ],
         ],
