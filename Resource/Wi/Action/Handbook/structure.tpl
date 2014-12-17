@@ -32,7 +32,6 @@
         Web/              Web root directory
               index.php         Directory index file
         app.php           Application run script file
-        branch.conf.php   module branch in vcs
         cli               Command line interface
         composer.json     Composer settings
         composer.phar     Composer run script
