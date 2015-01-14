@@ -40,7 +40,7 @@ return [
     {highlight_string("<?php
 return [
     'production' => [
-        'Ice/Core/Data_Provider' => [
+        'Ice\\Core\\Data_Provider' => [
             'Ice:Mysqli/default' => [
                 'username' => 'lan',
                 'password' => 'lan',
