@@ -21,10 +21,10 @@ return [
     ],
     'Ice\\Core\\Environment' => [
         'environments' => [
-            '/wwwice.global$/' => 'production',
-            '/wwwice.test$/' => 'test',
-            '/wwwice.local$/' => 'development',
-            '/iceframework.net$/' => 'development'
+            '/www.global$/' => 'production',
+            '/www.test$/' => 'test',
+            '/www.local$/' => 'development',
+            '/iceframework.net$/' => 'production'
         ],
     ],
 ];

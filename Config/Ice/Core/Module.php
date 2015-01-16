@@ -2,14 +2,13 @@
 return [
     'alias' => 'Wi',
     'module' => [
-        'name' => 'WwwIce',
+        'name' => 'Www',
         'url' => '',
-        'authors' => 'dp <email>',
+        'authors' => 'dp <denis.a.shestakov@gmail.com>',
         'vcs' => 'git',
         'source' => '',
     ],
     'modules' => [
-        ROOT_DIR . 'BlogIce/' => 'master',
-        ICE_DIR => 'master',
+        ROOT_DIR . 'Blog/' => 'master',
     ],
 ];

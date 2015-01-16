@@ -1,7 +1,7 @@
 {
-    "name": "WwwIce",
+    "name": "Www",
     "type": "library",
-    "description": "WwwIce",
+    "description": "Www",
     "config": {
         "vendor-dir": "..\/_vendor"
     },

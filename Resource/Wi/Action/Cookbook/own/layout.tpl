@@ -3,7 +3,7 @@
 <p>В конфигурационном файле роутов необходимо переопределить значение экшена для layout.<p>
 
 <div class="alert alert-info" role="alert">Конфигурационный файл роутов находится по следующему пути
-    WwwIce/Config/Ice/Core/Route.php
+    ./Config/Ice/Core/Route.php
 </div>
 
 <p>
@@ -55,7 +55,7 @@ return [
 
 <h3>2. Автосоздание экшена Layout_Main</h3>
 <p>
-    После обновления страницы, сгенерируется класс Wi\Action\Layout_Main (путь: WwwIce/Action/Layout/Main.php)
+    После обновления страницы, сгенерируется класс Wi\Action\Layout_Main (путь: ./Action/Layout/Main.php)
 </p>
 
 <p>
@@ -122,7 +122,7 @@ class Layout_Main extends Layout
 
 <h3>3. Шаблон нашего layout</h3>
 <p>
-    Зная, что из роута к нам придет 2 переменных ($title  и $main), плюс экшин, который мы объявили в afterActions, то мы правим сгенерированный шаблон по пути WwwIce/Resource/Wi/Action/Layout/Main.tpl таким образом:
+    Зная, что из роута к нам придет 2 переменных ($title  и $main), плюс экшин, который мы объявили в afterActions, то мы правим сгенерированный шаблон по пути ./Resource/Wi/Action/Layout/Main.tpl таким образом:
 </p>
 
 <p>
