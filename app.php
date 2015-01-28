@@ -23,4 +23,4 @@ if (!file_exists($bootstrapPath)) {
 include_once $bootstrapPath;
 
 Bootstrap::init();
-Ice::getInstance(dirname(MODULE_DIR))->run()->flush();
+Ice::getInstance(dirname(MODULE_DIR))->run();

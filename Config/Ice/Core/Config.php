@@ -16,9 +16,6 @@ return [
         'layout' => null,
         'defaultViewRenderClassName' => 'Ice:Smarty',
     ],
-    'Ice\\Core\\Action' => [
-        'layoutActionName' => 'Ice:Layout_Main',
-    ],
     'Ice\\Core\\Environment' => [
         'environments' => [
             '/www.global$/' => 'production',

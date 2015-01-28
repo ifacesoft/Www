@@ -12,20 +12,22 @@
     {highlight_string("<?php
 return [
     'wi_main' => [
-        'route' => '',
-        'GET' => [
-            'actions' => [
-                'title' => [
-                    'Ice:Title' => [
-                        'title' => 'Wi',
-                    ],
-                ],
-                'main' => 'Wi:Index',
-            ],
-            'layout' => 'Ice:Layout_Main', // ВОТ ЭТА СТРОЧКА
-        ],
+        'route' => '/',
         'weight' => 10000,
-    ],
+        'request' => [
+            'GET' => [
+                'layout' => 'Ice:Layout_Main', // ВОТ ЭТА СТРОЧКА
+                'actions' => [
+                    'title' => ['Ice:Title' => ['title' => 'Wi']],
+                    'main' => 'Wi:Index',
+                ],
+                'response' => [
+                    'statusCode' => 200,
+                    'contentType' => 'html'
+                ]
+            ]
+        ]
+    ]
 ];
 ")}
 </div>
@@ -33,21 +35,23 @@ return [
 <div style="background-color: #2b2b2b; font-weight: bold;">
     {highlight_string("<?php
 return [
-    'wi_main' => [
-        'route' => '',
-        'GET' => [
-            'actions' => [
-                'title' => [
-                    'Ice:Title' => [
-                        'title' => 'Wi',
-                    ],
-                ],
-                'main' => 'Wi:Index',
-            ],
-            'layout' => 'Wi:Layout_Main', // ВОТ ЭТА СТРОЧКА
-        ],
+    ''wi_main' => [
+        'route' => '/',
         'weight' => 10000,
-    ],
+        'request' => [
+            'GET' => [
+                'layout' => 'Wi:Layout_Main', // ВОТ ЭТА СТРОЧКА
+                'actions' => [
+                    'title' => ['Ice:Title' => ['title' => 'Wi']],
+                    'main' => 'Wi:Index',
+                ],
+                'response' => [
+                    'statusCode' => 200,
+                    'contentType' => 'html'
+                ]
+            ]
+        ]
+    ]
 ];
 ")}
 </div>
