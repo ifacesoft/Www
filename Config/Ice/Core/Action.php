@@ -32,6 +32,18 @@ return [
                             'isCopy' => false,
                         ],
                     ],
+                    'Www' => [
+                        'module' => [
+                            'path' => '',
+                            'js' => [
+//                                0 => 'js/javascript.js',
+                            ],
+                            'css' => [
+                                0 => 'css/style.css',
+                            ],
+                            'isCopy' => false,
+                        ],
+                    ],
                 ],
                 'vendors' => [
                     'jquery/jquery-ui' => [

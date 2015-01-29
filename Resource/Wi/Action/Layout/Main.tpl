@@ -27,16 +27,40 @@
             ga('send', 'pageview');
         </script>
     {/if}
+    <style>
+        #menu .nav a {
+            padding: 3px 24px;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
 <div id="Layout_Main">
     <div id="iceMessages" class='notifications top-right'></div>
-    <h1 class="container" style="font-size: 30px;">
-        <a href="/">
-            <img alt="Brand" src="/resource/img/logo/ice400.jpg" style="height: 62px;"/>
-            Ice PHP Framework
-        </a>
-    </h1>
+    <div class="container">
+        <div class="row" style="background: #ffffff url(/resource/img/logo/ice62.jpg) no-repeat left; height: 62px;">
+            <div class="col-md-3 col-md-offset-1">
+                <div>
+                    <span style="font-family: DaxlineBold; font-size: 22px;">Ice:</span>
+                    <span style="font-size: 16px;">Best Practices Inside</span>
+                </div>
+                <div>
+                    <span style="font-family: DaxlineMedium;font-size: 14px;">Open Source</span>
+                    <span style="font-family: DaxlineThin;font-size: 14px;">PHP Framework</span>
+                </div>
+            </div>
+            <div id="menu" class="col-md-5">
+                <ul class="nav nav-pills">
+                    <li role="presentation"><a href="#">Руководство</a></li>
+                    <li role="presentation"><a href="#">API</a></li>
+                    <li role="presentation"><a href="#">Блог</a></li>
+                    <li role="presentation" class="active"><a href="#">Полезные статьи</a></li>
+                    <li role="presentation"><a href="#">F.A.Q.</a></li>
+                    <li role="presentation"><a href="#">Форум</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <nav class="navbar navbar-default" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->

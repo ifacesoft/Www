@@ -1,0 +1,24 @@
+@font-face {
+    font-family: DaxlineRegular;
+    src: url('/resource/font/DaxlineCyr/DaxlineCyrTF-Regular.otf');
+}
+
+@font-face {
+    font-family: DaxlineBold;
+    src: url('/resource/font/DaxlineCyr/DaxlineCyrTF-Bold.otf');
+}
+
+@font-face {
+    font-family: DaxlineMedium;
+    src: url('/resource/font/DaxlineCyr/DaxlineCyrTF-Medium.otf');
+}
+
+@font-face {
+    font-family: DaxlineThin;
+    src: url('/resource/font/DaxlineCyr/DaxlineCyrTF-Thin.otf');
+}
+
+* {
+    font-size: 100%;
+    font-family: DaxlineRegular;
+}
