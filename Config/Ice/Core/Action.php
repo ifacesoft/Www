@@ -22,17 +22,15 @@ return [
                             'isCopy' => false,
                         ],
                         'module' => [
-                            'path' => '',
+                            'path' => 'Ice/',
                             'js' => [
-                                0 => 'js/javascript.js',
+                                1 => 'Helper/String.js'
                             ],
-                            'css' => [
-                                0 => 'css/style.css',
-                            ],
+                            'css' => [],
                             'isCopy' => false,
                         ],
                     ],
-                    'Www' => [
+                    'Wi' => [
                         'module' => [
                             'path' => '',
                             'js' => [

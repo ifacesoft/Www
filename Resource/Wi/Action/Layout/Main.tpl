@@ -49,29 +49,47 @@
                     <span style="font-family: DaxlineThin;font-size: 14px;">PHP Framework</span>
                 </div>
             </div>
-            <div id="menu" class="col-md-5">
+            <div id="menu" class="col-md-4 col-md-offset-1">
                 <ul class="nav nav-pills">
                     <li role="presentation"><a href="#">Руководство</a></li>
                     <li role="presentation"><a href="#">API</a></li>
-                    <li role="presentation"><a href="#">Блог</a></li>
+                    <li role="presentation"><a href="#">GitHub</a></li>
+                    {*<li role="presentation"><a href="#">Блог</a></li>*}
                     <li role="presentation" class="active"><a href="#">Полезные статьи</a></li>
                     <li role="presentation"><a href="#">F.A.Q.</a></li>
-                    <li role="presentation"><a href="#">Форум</a></li>
+                    {*<li role="presentation"><a href="#">Форум</a></li>*}
                 </ul>
+            </div>
+            <div class="col-md-2 col-md-offset-1">
+                {if $user}
+                    <br>
+                    <button onclick="location.href='/ice/security/logout'" class="btn btn-default">
+                        <span class="glyphicon glyphicon-log-out"></span>
+                        Выйти
+                    </button>
+                {else}
+                    <br>
+                    <button onclick="location.href='/ice/security/login';" class="btn btn-default">
+                        <span class="glyphicon glyphicon-qrcode"></span>
+                        Войти
+                    </button>
+                {/if}
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <a class="navbar-brand" href="/">Ice</a>
-            </div>
 
-            {$Menu_Navbar[0]}
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+    <hr style="background-color: #6f5499; background-image: linear-gradient(to bottom, #563d7c 0px, #6f5499 100%); height: 30px; margin-top: 0;">
+    {*<nav class="navbar navbar-default" role="navigation">*}
+        {*<div class="container">*}
+            {*<!-- Brand and toggle get grouped for better mobile display -->*}
+            {*<div class="navbar-header">*}
+                {*<a class="navbar-brand" href="/">Ice</a>*}
+            {*</div>*}
+
+            {*{$Menu_Navbar[0]}*}
+        {*</div>*}
+        {*<!-- /.container-fluid -->*}
+    {*</nav>*}
 
     <div class="container">
         {$main}
@@ -85,7 +103,7 @@
                         <img alt="Brand" src="/resource/img/logo/ice400.jpg" style="height: 22px;"/>
                     </a>
                 </div>
-                <p class="navbar-text">&copy; <a href="http://ifacesoft.ru">Ifacesoft</a> 2014</p>
+                <p class="navbar-text">&copy; <a href="http://ifacesoft.ru">Ifacesoft</a> 2014-2015</p>
 
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
