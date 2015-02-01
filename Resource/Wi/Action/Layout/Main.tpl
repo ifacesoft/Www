@@ -51,12 +51,12 @@
             </div>
             <div id="menu" class="col-md-4 col-md-offset-1">
                 <ul class="nav nav-pills">
-                    <li role="presentation"><a href="#">Руководство</a></li>
-                    <li role="presentation"><a href="#">API</a></li>
-                    <li role="presentation"><a href="#">GitHub</a></li>
+                    <li role="presentation"><a href="/handbook">Руководство</a></li>
+                    <li role="presentation"><a href="/resource/api/Ice/0.0">API</a></li>
+                    <li role="presentation"><a href="https://github.com/ifacesoft/Ice/tree/master">GitHub</a></li>
                     {*<li role="presentation"><a href="#">Блог</a></li>*}
-                    <li role="presentation" class="active"><a href="#">Полезные статьи</a></li>
-                    <li role="presentation"><a href="#">F.A.Q.</a></li>
+                    <li role="presentation" class="active"><a href="/cookbook">Полезные статьи</a></li>
+                    <li role="presentation"><a href="/faq">F.A.Q.</a></li>
                     {*<li role="presentation"><a href="#">Форум</a></li>*}
                 </ul>
             </div>
