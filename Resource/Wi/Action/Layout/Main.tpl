@@ -39,16 +39,17 @@
     <div id="iceMessages" class='notifications top-right'></div>
     <div class="container">
         <div class="row" style="background: #ffffff url(/resource/img/logo/ice62.jpg) no-repeat left; height: 62px;">
-            <div class="col-md-3 col-md-offset-1">
+            <div class="col-md-4 col-md-offset-1">
                 <div>
-                    <span style="font-size: 22px;">Best Practices Inside</span>
+                    <span style="font-family: DaxlineMedium;font-size: 22px;">Open Source</span>
+                    <span style="font-family: DaxlineThin;font-size: 22px;">PHP Framework</span>
                 </div>
                 <div>
-                    <span style="font-family: DaxlineMedium;font-size: 16px;">Open Source</span>
-                    <span style="font-family: DaxlineThin;font-size: 16px;">PHP Framework</span>
+                    <span style="font-size: 20px;">Best Practices Inside</span>
                 </div>
+
             </div>
-            <div id="menu" class="col-md-4 col-md-offset-1">
+            <div id="menu" class="col-md-4">
                 <ul class="nav nav-pills">
                     <li role="presentation"><a href="/handbook">Руководство</a></li>
                     <li role="presentation"><a href="/resource/api/Ice/0.0">API</a></li>
