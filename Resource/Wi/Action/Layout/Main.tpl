@@ -32,6 +32,13 @@
             padding: 3px 24px;
             font-size: 16px;
         }
+
+        hr#hrline {
+            background-color: #6f5499;
+            background-image: linear-gradient(to bottom, #563d7c 0px, #6f5499 100%);
+            height: 30px;
+            margin-top: 0;
+        }
     </style>
 </head>
 <body>
@@ -78,17 +85,17 @@
         </div>
     </div>
 
-    <hr style="background-color: #6f5499; background-image: linear-gradient(to bottom, #563d7c 0px, #6f5499 100%); height: 30px; margin-top: 0;">
+    <hr id="hrline">
     {*<nav class="navbar navbar-default" role="navigation">*}
-        {*<div class="container">*}
-            {*<!-- Brand and toggle get grouped for better mobile display -->*}
-            {*<div class="navbar-header">*}
-                {*<a class="navbar-brand" href="/">Ice</a>*}
-            {*</div>*}
+    {*<div class="container">*}
+    {*<!-- Brand and toggle get grouped for better mobile display -->*}
+    {*<div class="navbar-header">*}
+    {*<a class="navbar-brand" href="/">Ice</a>*}
+    {*</div>*}
 
-            {*{$Menu_Navbar[0]}*}
-        {*</div>*}
-        {*<!-- /.container-fluid -->*}
+    {*{$Menu_Navbar[0]}*}
+    {*</div>*}
+    {*<!-- /.container-fluid -->*}
     {*</nav>*}
 
     <div class="container">
