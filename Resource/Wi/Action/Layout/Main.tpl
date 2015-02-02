@@ -95,6 +95,8 @@
         {$main}
     </div>
 
+    {*<hr style="background-color: #6f5499; background-image: linear-gradient(to bottom, #563d7c 0px, #6f5499 100%); height: 62px;">*}
+
     <div class="footer">
         <div class="navbar navbar-inverse" style="margin-bottom: 0;">
             <div class="container">

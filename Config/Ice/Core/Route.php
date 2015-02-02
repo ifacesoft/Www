@@ -7,7 +7,7 @@ return [
             'GET' => [
                 'layout' => 'Wi:Layout_Main',
                 'actions' => [
-                    'title' => ['Ice:Title' => ['title' => 'Ice Open Source PHP Framework ']],
+                    'title' => ['Ice:Title' => ['title' => 'Ice - Open Source PHP Framework ']],
                     'main' => 'Wi:Index',
                 ]
             ]
