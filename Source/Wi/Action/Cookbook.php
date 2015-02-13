@@ -34,7 +34,7 @@ class Cookbook extends Action
     public static $config = [
         'viewRenderClassName' => 'Ice:Smarty',
         'afterActions' => 'Wi:Cookbook_Menu',
-        'inputDataProviderKeys' => Router::DEFAULT_KEY,
+        'inputDataProviderKeys' => Router::DEFAULT_DATA_PROVIDER_KEY,
     ];
 
     /**
