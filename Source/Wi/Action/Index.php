@@ -3,6 +3,8 @@ namespace Wi\Action;
 
 use Ice\Core\Action;
 use Ice\Core\Action_Context;
+use Ice\Core\Request;
+use Ice\Helper\Api_Yandex;
 
 /**
  * Class Index
@@ -30,7 +32,7 @@ class Index extends Action
      */
     public static $config = [
         'viewRenderClassName' => 'Ice:Smarty',
-        
+        'outputDataProviderKeys' => 'Ice:Resource/Wi\Action\Index'
     ];
 
     /**
@@ -42,6 +44,6 @@ class Index extends Action
      */
     protected function run(array $input, Action_Context $actionContext)
     {
-        return ['errors' => 'Need implement run() method of action class Index.'];
+        return ['locales' => Api_Yandex::getLocales()];
     }
 }
