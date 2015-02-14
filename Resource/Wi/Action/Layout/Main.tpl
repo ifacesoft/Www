@@ -58,13 +58,14 @@
             </div>
             <div id="menu" class="col-md-4">
                 <ul class="nav nav-pills">
-                    <li role="presentation"><a href="/handbook">Руководство</a></li>
+                    <li role="presentation"><a href="/handbook">{$resource.Layout_Main->get('Руководство')}</a></li>
                     <li role="presentation"><a href="/resource/api/Ice/0.0">API</a></li>
                     <li role="presentation"><a href="https://github.com/ifacesoft/Ice/tree/master">GitHub</a></li>
-                    {*<li role="presentation"><a href="#">Блог</a></li>*}
-                    <li role="presentation" class="active"><a href="/cookbook">Полезные статьи</a></li>
+                    {*<li role="presentation"><a href="#">{$resource.Layout_Main->get('Блог')}</a></li>*}
+                    <li role="presentation" class="active"><a
+                                href="/cookbook">{$resource.Layout_Main->get('Полезные статьи')}</a></li>
                     <li role="presentation"><a href="/faq">F.A.Q.</a></li>
-                    {*<li role="presentation"><a href="#">Форум</a></li>*}
+                    {*<li role="presentation"><a href="#">{$resource.Layout_Main->get('Форум')}</a></li>*}
                 </ul>
             </div>
             <div class="col-md-2 col-md-offset-1">
@@ -86,6 +87,7 @@
     </div>
 
     <hr id="hrline">
+
     {*<nav class="navbar navbar-default" role="navigation">*}
     {*<div class="container">*}
     {*<!-- Brand and toggle get grouped for better mobile display -->*}

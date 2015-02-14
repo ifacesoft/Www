@@ -9,7 +9,7 @@ return [
         'Ice:Mysqli/default' => 'test',
     ],
     'Ice\\Core\\Request' => [
-        'multilocale' => false,
+        'multilocale' => 1,
         'locale' => 'ru',
     ],
     'Ice\\Core\\View' => [

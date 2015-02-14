@@ -5,6 +5,7 @@ use Ice;
 use Ice\Action\Layout;
 use Ice\Core\Action;
 use Ice\Core\Action_Context;
+use Ice\Core\Request;
 use Ice\Core\Security;
 use Ice\Menu\Navbar;
 
@@ -35,7 +36,8 @@ class Layout_Main extends Layout
     public static $config = [
         'afterActions' => 'Ice:Resources',
         'viewRenderClassName' => 'Ice:Smarty',
-        'layout' => ''
+        'layout' => '',
+        'outputDataProviderKeys' => 'Ice:Resource/Wi\Action\Layout_Main'
     ];
 
     protected function run(array $input, Action_Context $actionContext)
