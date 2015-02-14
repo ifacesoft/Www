@@ -21,7 +21,7 @@ return [
             '/www.global$/' => 'production',
             '/www.test$/' => 'test',
             '/www.local$/' => 'development',
-            '/iceframework.net$/' => 'production',
+            '/iceframework.net$/' => 'development',
             '/iceframework.local$/' => 'development',
 
         ],
