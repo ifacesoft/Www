@@ -71,9 +71,11 @@
 
         <div class="panel panel-default">
             <div class="panel-body">
-                {foreach from=$locales item="locale"}
+                {foreach from=$flags item="flag"}
                     <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                         class="flag flag-{$locale}" alt="{$locale}" onclick="location.href='/ice/locale/{$locale}';"/>
+                         class="flag flag-{$flag.country}" style="cursor: pointer;"
+                         alt="{$flag.lang}" onclick="location.href='/ice/locale/{$flag.locale}';"
+                         data-toggle="tooltip" data-placement="top" title="{$flag.lang}"/>
                 {/foreach}
             </div>
         </div>

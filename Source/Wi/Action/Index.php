@@ -3,8 +3,9 @@ namespace Wi\Action;
 
 use Ice\Core\Action;
 use Ice\Core\Action_Context;
+use Ice\Core\Logger;
 use Ice\Core\Request;
-use Ice\Helper\Api_Yandex;
+use Ice\Helper\Api_Client_Yandex_Translate;
 
 /**
  * Class Index
@@ -44,6 +45,6 @@ class Index extends Action
      */
     protected function run(array $input, Action_Context $actionContext)
     {
-        return ['locales' => Api_Yandex::getLocales()];
+        return ['flags' => Api_Client_Yandex_Translate::getFlags()];
     }
 }
