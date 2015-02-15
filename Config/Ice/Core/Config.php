@@ -5,8 +5,10 @@ return [
             'wi' => 'Wi',
         ],
     ],
-    'Ice\\Core\\Data_Source' => [
-        'Ice:Mysqli/default' => 'test',
+    'Ice\Core\Data_Source' => [
+        'Ice\Data\Source\Mysqli' => [
+            'default' => 'www',
+        ],
     ],
     'Ice\\Core\\Request' => [
         'multilocale' => 1,
