@@ -9,7 +9,7 @@ return [
         'Ice:Mysqli/default' => 'test',
     ],
     'Ice\\Core\\Request' => [
-        'multilocale' => false,
+        'multilocale' => 1,
         'locale' => 'ru',
     ],
     'Ice\\Core\\View' => [
@@ -21,7 +21,7 @@ return [
             '/www.global$/' => 'production',
             '/www.test$/' => 'test',
             '/www.local$/' => 'development',
-            '/iceframework.net$/' => 'production',
+            '/iceframework.net$/' => 'development',
             '/iceframework.local$/' => 'development',
 
         ],

@@ -9,7 +9,7 @@
     <title>{$title}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {$Resources[0]}
-    {if Ice::get('Ice\Core\Environment')->isProduction()}
+    {*if Ice::get('Ice\Core\Environment')->isProduction()*}
         <script>
             (function (i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r;
@@ -26,7 +26,7 @@
             ga('create', 'UA-51954794-1', 'iceframework.net');
             ga('send', 'pageview');
         </script>
-    {/if}
+    {*/if*}
     <style>
         #menu .nav a {
             padding: 3px 24px;
@@ -58,13 +58,14 @@
             </div>
             <div id="menu" class="col-md-4">
                 <ul class="nav nav-pills">
-                    <li role="presentation"><a href="/handbook">Руководство</a></li>
+                    <li role="presentation"><a href="/handbook">{$resource.Layout_Main->get('Руководство')}</a></li>
                     <li role="presentation"><a href="/resource/api/Ice/0.0">API</a></li>
                     <li role="presentation"><a href="https://github.com/ifacesoft/Ice/tree/master">GitHub</a></li>
-                    {*<li role="presentation"><a href="#">Блог</a></li>*}
-                    <li role="presentation" class="active"><a href="/cookbook">Полезные статьи</a></li>
+                    {*<li role="presentation"><a href="#">{$resource.Layout_Main->get('Блог')}</a></li>*}
+                    <li role="presentation" class="active"><a
+                                href="/cookbook">{$resource.Layout_Main->get('Полезные статьи')}</a></li>
                     <li role="presentation"><a href="/faq">F.A.Q.</a></li>
-                    {*<li role="presentation"><a href="#">Форум</a></li>*}
+                    {*<li role="presentation"><a href="#">{$resource.Layout_Main->get('Форум')}</a></li>*}
                 </ul>
             </div>
             <div class="col-md-2 col-md-offset-1">
@@ -86,6 +87,7 @@
     </div>
 
     <hr id="hrline">
+
     {*<nav class="navbar navbar-default" role="navigation">*}
     {*<div class="container">*}
     {*<!-- Brand and toggle get grouped for better mobile display -->*}
@@ -122,7 +124,7 @@
                         <li><a href="/faq">Faq</a></li>
                         {*<li><a href="http://iceframework.net/demo">Live Demo</a></li>*}
                     </ul>
-                    {if Ice::get('Ice\Core\Environment')->isProduction()}
+                    {*if Ice::get('Ice\Core\Environment')->isProduction()*}
                         <div class="nav navbar-nav navbar-right">{literal}
                                 <!-- Yandex.Metrika informer -->
                                 <a href="https://metrika.yandex.ru/stat/?id=25280492&amp;from=informer"
@@ -186,7 +188,7 @@
                                 <!--/LiveInternet-->
                             {/literal}
                         </div>
-                    {/if}
+                    {*/if*}
                 </div>
                 <!-- /.container-fluid -->
             </div>
