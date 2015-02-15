@@ -15,8 +15,9 @@ return [
         ]
     ],
     'Ice\Core\Data_Source' => [ // Да-да, это она
-        'lan' => 'Ice:Mysqli/default',
-        'binardi' => 'Ice:Mysqli/default',
+        'Ice\Data\Source\Mysqli' => [
+            'default' => ['scheme1', 'scheme2'],
+        ],
     ],
     'Ice\Core\Request' => [
         'locale' => 'ru',
