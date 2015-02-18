@@ -16,15 +16,16 @@ return [
         'weight' => 10000,
         'request' => [
             'GET' => [
-                'layout' => 'Ice:Layout_Main', // ВОТ ЭТА СТРОЧКА
-                'actions' => [
-                    'title' => ['Ice:Title' => ['title' => 'Wi']],
-                    'main' => 'Wi:Index',
+                'Ice:Layout_Main' => [, // ВОТ ЭТА СТРОЧКА
+                    'actions' => [
+                        ['Ice:Title', ['title' => 'Wi'], 'title'],
+                        ['Wi:Index', [], 'main']
+                    ],
+                    'response' => [
+                        'statusCode' => 200,
+                        'contentType' => 'html'
+                    ]
                 ],
-                'response' => [
-                    'statusCode' => 200,
-                    'contentType' => 'html'
-                ]
             ]
         ]
     ]
@@ -40,15 +41,16 @@ return [
         'weight' => 10000,
         'request' => [
             'GET' => [
-                'layout' => 'Wi:Layout_Main', // ВОТ ЭТА СТРОЧКА
-                'actions' => [
-                    'title' => ['Ice:Title' => ['title' => 'Wi']],
-                    'main' => 'Wi:Index',
+                'Wi:Layout_Main' => [, // ВОТ ЭТА СТРОЧКА
+                    'actions' => [
+                        ['Ice:Title', ['title' => 'Wi'], 'title'],
+                        ['Wi:Index', [], 'main']
+                    ],
+                    'response' => [
+                        'statusCode' => 200,
+                        'contentType' => 'html'
+                    ]
                 ],
-                'response' => [
-                    'statusCode' => 200,
-                    'contentType' => 'html'
-                ]
             ]
         ]
     ]
