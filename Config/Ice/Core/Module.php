@@ -9,6 +9,6 @@ return [
         'source' => '',
     ],
     'modules' => [
-        ROOT_DIR . 'Blog/' => 'master',
+        ROOT_DIR . 'Blog/' => '/blog',
     ],
 ];

@@ -57,6 +57,7 @@
                 </script>
             </div>
             <div class="col-md-6">
+                <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fgroups%2F1398920987078554%2F&amp;width=220&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:220px; height:258px;" allowTransparency="true"></iframe>
                 <div class="fb-like-box" data-href="https://www.facebook.com/groups/1398920987078554/" data-width="220"
                      data-height="400" data-colorscheme="light" data-show-faces="true" data-header="false"
                      data-stream="false" data-show-border="false"></div>
@@ -70,9 +71,11 @@
 
         <div class="panel panel-default">
             <div class="panel-body">
-                {foreach from=$locales item="locale"}
+                {foreach from=$flags item="flag"}
                     <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                         class="flag flag-{$locale}" alt="{$locale}" onclick="location.href='/ice/locale/{$locale}';"/>
+                         class="flag flag-{$flag.country}" style="cursor: pointer;"
+                         alt="{$flag.lang}" onclick="location.href='/ice/locale/{$flag.locale}';"
+                         data-toggle="tooltip" data-placement="top" title="{$flag.lang}"/>
                 {/foreach}
             </div>
         </div>

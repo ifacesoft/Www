@@ -5,8 +5,10 @@ return [
             'wi' => 'Wi',
         ],
     ],
-    'Ice\\Core\\Data_Source' => [
-        'Ice:Mysqli/default' => 'test',
+    'Ice\Core\Data_Source' => [
+        'Ice\Data\Source\Mysqli' => [
+            'default' => 'www',
+        ],
     ],
     'Ice\\Core\\Request' => [
         'multiLocale' => 1,
@@ -21,7 +23,7 @@ return [
             '/www.global$/' => 'production',
             '/www.test$/' => 'test',
             '/www.local$/' => 'development',
-            '/iceframework.net$/' => 'production',
+            '/iceframework.net$/' => 'development',
             '/iceframework.local$/' => 'development',
 
         ],
