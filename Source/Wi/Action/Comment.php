@@ -35,10 +35,10 @@ class Comment extends Action{
     /** Run action
      *
      * @param array $input
-     * @param Action_Context $actionContext
+
      * @return array
      */
-    protected function run(array $input, Action_Context $actionContext)
+    protected function run(array $input)
     {
         // TODO: Implement run() method.
     }

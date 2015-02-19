@@ -40,10 +40,10 @@ class Index extends Action
      * Run action
      *
      * @param array $input
-     * @param Action_Context $actionContext
+
      * @return array
      */
-    protected function run(array $input, Action_Context $actionContext)
+    protected function run(array $input)
     {
         return ['flags' => Api_Client_Yandex_Translate::getFlags()];
     }

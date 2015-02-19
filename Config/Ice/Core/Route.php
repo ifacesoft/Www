@@ -7,8 +7,8 @@ return [
             'GET' => [
                 'Wi:Layout_Main' => [
                     'actions' => [
-                        ['Ice:Title', ['title' => 'Ice - Open Source PHP Framework '], 'title'],
-                        ['Wi:Index', [], 'main']
+                        ['title' => 'Ice:Title', ['title' => 'Ice - Open Source PHP Framework ']],
+                        'main' => 'Wi:Index'
                     ]
                 ]
             ]
@@ -23,8 +23,8 @@ return [
             'GET' => [
                 'Wi:Layout_Main' => [
                     'actions' => [
-                        ['Ice:Title', ['title' => 'Ice - Руководство (Handbook)'], 'title'],
-                        ['Wi:Handbook', [], 'main']
+                        ['title' => 'Ice:Title', ['title' => 'Ice - Руководство (Handbook)']],
+                        'main' => 'Wi:Handbook'
                     ]
                 ]
             ]
@@ -39,8 +39,8 @@ return [
             'GET' => [
                 'Wi:Layout_Main' => [
                     'actions' => [
-                        ['Ice:Title', ['title' => 'Ice - Полезные статьи (Cookbook)'], 'title'],
-                        ['Wi:Cookbook', [], 'main']
+                        ['title' => 'Ice:Title', ['title' => 'Ice - Полезные статьи (Cookbook)']],
+                        'main' => 'Wi:Cookbook'
                     ]
                 ]
             ]
@@ -52,8 +52,8 @@ return [
             'GET' => [
                 'Wi:Layout_Main' => [
                     'actions' => [
-                        ['Ice:Title', ['title' => 'F.A.Q'], 'title'],
-                        ['Wi:Faq', [], 'main']
+                        ['title' => 'Ice:Title', ['title' => 'F.A.Q']],
+                        'main' => 'Wi:Faq'
                     ]
                 ]
             ]
@@ -65,8 +65,8 @@ return [
             'GET' => [
                 'Wi:Layout_Main' => [
                     'actions' => [
-                        ['Ice:Title', ['title' => 'Ice Quick Tour'], 'title'],
-                        ['Wi:Tour', [], 'main']
+                        ['title' => 'Ice:Title', ['title' => 'Ice Quick Tour']],
+                        'main' => 'Wi:Tour'
                     ]
                 ]
             ]

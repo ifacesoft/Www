@@ -40,7 +40,7 @@ class Layout_Main extends Layout
         'outputDataProviderKeys' => 'Ice:Resource/Wi\Action\Layout_Main'
     ];
 
-    protected function run(array $input, Action_Context $actionContext)
+    protected function run(array $input)
     {
         $menu = Navbar::getInstance('Topmenu')
             ->dropdown(
@@ -61,7 +61,7 @@ class Layout_Main extends Layout
             ->button('<span class="glyphicon glyphicon-qrcode"></span> Войти', 'location.href="' . Ice::get('Ice\Core\Route')->getUrl('ice_security_login') . '";', 'right', !Security::getUser())
             ->button('<span class="glyphicon glyphicon-log-out"></span> Выйти', 'location.href="' . Ice::get('Ice\Core\Route')->getUrl('ice_security_logout') . '";', 'right', Security::getUser());
 
-        $actionContext->addAction('Ice:Menu_Navbar', ['menu' => $menu]);
+        $this->addAction('Ice:Menu_Navbar', ['menu' => $menu]);
 
         return array_merge(
             parent::run($input, $actionContext),

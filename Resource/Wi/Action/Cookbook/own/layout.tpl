@@ -18,8 +18,8 @@ return [
             'GET' => [
                 'Ice:Layout_Main' => [, // ВОТ ЭТА СТРОЧКА
                     'actions' => [
-                        ['Ice:Title', ['title' => 'Wi'], 'title'],
-                        ['Wi:Index', [], 'main']
+                        ['title' => 'Ice:Title', ['title' => 'Wi']],
+                        'main' => 'Wi:Index'
                     ],
                     'response' => [
                         'statusCode' => 200,
@@ -43,8 +43,8 @@ return [
             'GET' => [
                 'Wi:Layout_Main' => [, // ВОТ ЭТА СТРОЧКА
                     'actions' => [
-                        ['Ice:Title', ['title' => 'Wi'], 'title'],
-                        ['Wi:Index', [], 'main']
+                        ['title' => 'Ice:Title', ['title' => 'Wi']],
+                        'main' => 'Wi:Index'
                     ],
                     'response' => [
                         'statusCode' => 200,
@@ -148,6 +148,14 @@ class Layout_Main extends Layout
 <body>
 <div id="Layout_Main" class="container">
     <div id="iceMessages" class="notifications top-right"></div>
+    <div id="icePreloader">
+        <div id="blockG_1" class="preloaderBlock">
+        </div>
+        <div id="blockG_2" class="preloaderBlock">
+        </div>
+        <div id="blockG_3" class="preloaderBlock">
+        </div>
+    </div>
     {$main}
 </div>
 ', true)}

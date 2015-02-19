@@ -41,12 +41,12 @@ class Handbook extends Action
      * Run action
      *
      * @param array $input
-     * @param Action_Context $actionContext
+
      * @return array
      */
-    protected function run(array $input, Action_Context $actionContext)
+    protected function run(array $input)
     {
-        $actionContext->addAction('Wi:Comment', ['article' => $input['article']]);
+        $this->addAction('Wi:Comment', ['article' => $input['article']]);
 
         return [
             'article' => !empty($input['article'])
