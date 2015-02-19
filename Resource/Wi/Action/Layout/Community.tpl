@@ -30,6 +30,15 @@
 <body>
 <div id="Layout_Community">
     <div id="iceMessages" class='notifications top-right'></div>
+    <div id="icePreloader">
+        <div id="blockG_1" class="preloaderBlock">
+        </div>
+        <div id="blockG_2" class="preloaderBlock">
+        </div>
+        <div id="blockG_3" class="preloaderBlock">
+        </div>
+    </div>
+
     <h1 class="container" style="font-size: 30px;">
         <a href="/">
             <img alt="Brand" src="/resource/img/logo/ice400.jpg" style="height: 62px;"/>

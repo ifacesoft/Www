@@ -16,15 +16,16 @@ return [
         'weight' => 10000,
         'request' => [
             'GET' => [
-                'layout' => 'Ice:Layout_Main', // ВОТ ЭТА СТРОЧКА
-                'actions' => [
-                    'title' => ['Ice:Title' => ['title' => 'Wi']],
-                    'main' => 'Wi:Index',
+                'Ice:Layout_Main' => [, // ВОТ ЭТА СТРОЧКА
+                    'actions' => [
+                        ['title' => 'Ice:Title', ['title' => 'Wi']],
+                        'main' => 'Wi:Index'
+                    ],
+                    'response' => [
+                        'statusCode' => 200,
+                        'contentType' => 'html'
+                    ]
                 ],
-                'response' => [
-                    'statusCode' => 200,
-                    'contentType' => 'html'
-                ]
             ]
         ]
     ]
@@ -40,15 +41,16 @@ return [
         'weight' => 10000,
         'request' => [
             'GET' => [
-                'layout' => 'Wi:Layout_Main', // ВОТ ЭТА СТРОЧКА
-                'actions' => [
-                    'title' => ['Ice:Title' => ['title' => 'Wi']],
-                    'main' => 'Wi:Index',
+                'Wi:Layout_Main' => [, // ВОТ ЭТА СТРОЧКА
+                    'actions' => [
+                        ['title' => 'Ice:Title', ['title' => 'Wi']],
+                        'main' => 'Wi:Index'
+                    ],
+                    'response' => [
+                        'statusCode' => 200,
+                        'contentType' => 'html'
+                    ]
                 ],
-                'response' => [
-                    'statusCode' => 200,
-                    'contentType' => 'html'
-                ]
             ]
         ]
     ]
@@ -146,6 +148,14 @@ class Layout_Main extends Layout
 <body>
 <div id="Layout_Main" class="container">
     <div id="iceMessages" class="notifications top-right"></div>
+    <div id="icePreloader">
+        <div id="blockG_1" class="preloaderBlock">
+        </div>
+        <div id="blockG_2" class="preloaderBlock">
+        </div>
+        <div id="blockG_3" class="preloaderBlock">
+        </div>
+    </div>
     {$main}
 </div>
 ', true)}

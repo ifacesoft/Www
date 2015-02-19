@@ -11,7 +11,7 @@ return [
         ],
     ],
     'Ice\\Core\\Request' => [
-        'multilocale' => 1,
+        'multiLocale' => 1,
         'locale' => 'ru',
     ],
     'Ice\\Core\\View' => [

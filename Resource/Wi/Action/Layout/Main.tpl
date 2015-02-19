@@ -44,6 +44,14 @@
 <body>
 <div id="Layout_Main">
     <div id="iceMessages" class='notifications top-right'></div>
+    <div id="icePreloader">
+        <div id="blockG_1" class="preloaderBlock">
+        </div>
+        <div id="blockG_2" class="preloaderBlock">
+        </div>
+        <div id="blockG_3" class="preloaderBlock">
+        </div>
+    </div>
     <div class="container">
         <div class="row" style="background: #ffffff url(/resource/img/logo/ice62.jpg) no-repeat left; height: 62px;">
             <div class="col-md-4 col-md-offset-1">

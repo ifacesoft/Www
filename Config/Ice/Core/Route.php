@@ -5,10 +5,11 @@ return [
         'weight' => 10000,
         'request' => [
             'GET' => [
-                'layout' => 'Wi:Layout_Main',
-                'actions' => [
-                    'title' => ['Ice:Title' => ['title' => 'Ice - Open Source PHP Framework ']],
-                    'main' => 'Wi:Index',
+                'Wi:Layout_Main' => [
+                    'actions' => [
+                        ['title' => 'Ice:Title', ['title' => 'Ice - Open Source PHP Framework ']],
+                        'main' => 'Wi:Index'
+                    ]
                 ]
             ]
         ]
@@ -20,10 +21,11 @@ return [
         ],
         'request' => [
             'GET' => [
-                'layout' => 'Wi:Layout_Main',
-                'actions' => [
-                    'title' => ['Ice:Title' => ['title' => 'Ice - Руководство (Handbook)']],
-                    'main' => 'Wi:Handbook',
+                'Wi:Layout_Main' => [
+                    'actions' => [
+                        ['title' => 'Ice:Title', ['title' => 'Ice - Руководство (Handbook)']],
+                        'main' => 'Wi:Handbook'
+                    ]
                 ]
             ]
         ]
@@ -35,10 +37,11 @@ return [
         ],
         'request' => [
             'GET' => [
-                'layout' => 'Wi:Layout_Main',
-                'actions' => [
-                    'title' => ['Ice:Title' => ['title' => 'Ice - Полезные статьи (Cookbook)']],
-                    'main' => 'Wi:Cookbook',
+                'Wi:Layout_Main' => [
+                    'actions' => [
+                        ['title' => 'Ice:Title', ['title' => 'Ice - Полезные статьи (Cookbook)']],
+                        'main' => 'Wi:Cookbook'
+                    ]
                 ]
             ]
         ]
@@ -47,10 +50,11 @@ return [
         'route' => '/faq',
         'request' => [
             'GET' => [
-                'layout' => 'Wi:Layout_Main',
-                'actions' => [
-                    'title' => ['Ice:Title' => ['title' => 'F.A.Q']],
-                    'main' => 'Wi:Faq',
+                'Wi:Layout_Main' => [
+                    'actions' => [
+                        ['title' => 'Ice:Title', ['title' => 'F.A.Q']],
+                        'main' => 'Wi:Faq'
+                    ]
                 ]
             ]
         ]
@@ -59,12 +63,12 @@ return [
         'route' => '/tour',
         'request' => [
             'GET' => [
-                'layout' => 'Wi:Layout_Main',
-                'actions' => [
-                    'title' => ['Ice:Title' => ['title' => 'Ice Quick Tour']],
-                    'main' => 'Wi:Tour',
+                'Wi:Layout_Main' => [
+                    'actions' => [
+                        ['title' => 'Ice:Title', ['title' => 'Ice Quick Tour']],
+                        'main' => 'Wi:Tour'
+                    ]
                 ]
-
             ]
         ]
     ]
