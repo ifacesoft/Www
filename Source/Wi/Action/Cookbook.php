@@ -41,7 +41,6 @@ class Cookbook extends Action
      * Run action
      *
      * @param array $input
-
      * @return array
      */
     public function run(array $input)

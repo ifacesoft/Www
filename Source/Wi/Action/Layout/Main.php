@@ -64,7 +64,7 @@ class Layout_Main extends Layout
         $this->addAction('Ice:Menu_Navbar', ['menu' => $menu]);
 
         return array_merge(
-            parent::run($input, $actionContext),
+            parent::run($input),
             [
                 'user' => Security::getUser()
             ]
