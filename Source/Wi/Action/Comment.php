@@ -38,7 +38,7 @@ class Comment extends Action{
 
      * @return array
      */
-    protected function run(array $input)
+    public function run(array $input)
     {
         // TODO: Implement run() method.
     }

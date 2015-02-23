@@ -43,7 +43,7 @@ class Index extends Action
 
      * @return array
      */
-    protected function run(array $input)
+    public function run(array $input)
     {
         return ['flags' => Api_Client_Yandex_Translate::getFlags()];
     }

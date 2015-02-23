@@ -14,10 +14,6 @@ return [
         'multiLocale' => 1,
         'locale' => 'ru',
     ],
-    'Ice\\Core\\View' => [
-        'layout' => null,
-        'defaultViewRenderClassName' => 'Ice:Smarty',
-    ],
     'Ice\\Core\\Environment' => [
         'environments' => [
             '/www.global$/' => 'production',
