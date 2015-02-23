@@ -40,7 +40,7 @@ class Layout_Main extends Layout
         'outputDataProviderKeys' => 'Ice:Resource/Wi\Action\Layout_Main'
     ];
 
-    protected function run(array $input)
+    public function run(array $input)
     {
         $menu = Navbar::getInstance('Topmenu')
             ->dropdown(

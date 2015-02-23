@@ -43,7 +43,7 @@ class Cookbook extends Action
      * @param array $input
      * @return array
      */
-    protected function run(array $input)
+    public function run(array $input)
     {
         $this->addAction('Wi:Comment', ['article' => $input['article']]);
 
