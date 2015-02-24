@@ -61,7 +61,7 @@ class Layout_Main extends Layout
             ->button('<span class="glyphicon glyphicon-qrcode"></span> Войти', 'location.href="' . Ice::get('Ice\Core\Route')->getUrl('ice_security_login') . '";', 'right', !Security::getUser())
             ->button('<span class="glyphicon glyphicon-log-out"></span> Выйти', 'location.href="' . Ice::get('Ice\Core\Route')->getUrl('ice_security_logout') . '";', 'right', Security::getUser());
 
-        $this->addAction('Ice:Menu_Navbar', ['menu' => $menu]);
+        $this->addAction(['Ice:Menu_Navbar', ['menu' => $menu]]);
 
         return array_merge(
             parent::run($input),
