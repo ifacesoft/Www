@@ -6,7 +6,7 @@
  *
  * @author dp <denis.a.shestakov@gmail.com>
  *
- * @version 0.4
+ * @version 0.2
  * @since 0.0
  */
 
