@@ -13,6 +13,6 @@ return [
         ]
     ],
     'modules' => [
-        ROOT_DIR . 'Blog/' => '/blog',
+        ROOT_DIR . 'Bl/' => '/blog',
     ],
 ];
