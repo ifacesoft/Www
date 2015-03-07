@@ -58,18 +58,5 @@ return [
                 ]
             ]
         ]
-    ],
-    'wi_tour' => [
-        'route' => '/tour',
-        'request' => [
-            'GET' => [
-                'Wi:Layout_Main' => [
-                    'actions' => [
-                        ['title' => 'Ice:Title', ['title' => 'Ice Quick Tour']],
-                        'main' => 'Wi:Tour'
-                    ]
-                ]
-            ]
-        ]
     ]
 ];
