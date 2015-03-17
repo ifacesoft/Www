@@ -13,6 +13,6 @@ return [
         ]
     ],
     'modules' => [
-        ROOT_DIR . 'Bl/' => '/blog',
+        'dp-ifacesoft/blog' => '/blog',
     ],
 ];
