@@ -4,12 +4,13 @@ return [
     'module' => [
         'name' => 'Www',
         'description' => 'Ice framework official site',
-        'type' => 'module',
+        'type' => 'web',
+        'url' => 'http://iceframework.net/',
         'authors' => 'dp <denis.a.shestakov@gmail.com>',
         'vcs' => 'git',
         'source' => 'https://github.com/ifacesoft/Www.git',
         'Ice\Core\Data_Source' => [
-            'Ice\Data\Source\Mysqli/default.test' => 'www_',
+            'Ice\Data\Source\Mysqli/default.www' => ['www_', 'ice_']
         ],
         'configDir' => 'Config/',
         'sourceDir' => 'Source/',
@@ -22,6 +23,6 @@ return [
     ],
     'vendors' => [
 //        'dp-ifacesoft/blog' => '/blog',
-            'ifacesoft/ice' => '/ice'
+        'ifacesoft/ice' => '/ice'
     ],
 ];

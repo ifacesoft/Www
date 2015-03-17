@@ -12,7 +12,6 @@ return [
             '/www.local$/' => 'development',
             '/iceframework.net$/' => 'development',
             '/iceframework.local$/' => 'development',
-
         ],
     ],
 ];

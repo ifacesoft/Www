@@ -18,24 +18,50 @@ use Ice\View\Render\Smarty;
  */
 class Handbook extends Action
 {
-    /**  public static $config = [
-     *      'afterActions' => [],          // actions
-     *      'layout' => null,               // Emmet style layout
-     *      'template' => null,             // Template of view
-     *      'output' => null,               // Output type: standard|file
-     *      'viewRenderClassName' => null,  // Render class for view (example: Ice:Php)
-     *      'inputDefaults' => [],          // Default input data
-     *      'inputValidators' => [],        // Input data validators
-     *      'inputDataProviderKeys' => [],  // InputDataProviders keys
-     *      'outputDataProviderKeys' => [], // OutputDataProviders keys
-     *      'cacheDataProviderKey' => ''    // Cache data provider key
+    /**
+     * Action config
+     *
+     * example:
+     * ```php
+     *  $config = [
+     *      'actions' => [
+     *          ['Ice:Title', ['title' => 'page title'], 'title'],
+     *          ['Ice:Another_Action, ['param' => 'value']
+     *      ],
+     *      'view' => [
+     *          'layout' => Emmet::PANEL_BODY,
+     *          'template' => _Custom,
+     *          'viewRenderClass' => Ice:Twig,
+     *      ],
+     *      'input' => [
+     *          Request::DEFAULT_DATA_PROVIDER_KEY => [
+     *              'paramFromGETorPOST => [
+     *                  'default' => 'defaultValue',
+     *                  'validators' => ['Ice:PATTERN => PATTERN::LETTERS_ONLY]
+     *                  'type' => 'string'
+     *              ]
+     *          ]
+     *      ],
+     *      'output' => ['Ice:Resource/Ice\Action\Index'],
+     *      'ttl' => 3600,
+     *      'roles' => []
      *  ];
+     * ```
+     * @return array
+     *
+     * @author anonymous <email>
+     *
+     * @version 0
+     * @since 0
      */
-    public static $config = [
-        'viewRenderClassName' => 'Ice:Smarty',
-        'afterActions' => 'Wi:Handbook_Menu',
-        'inputDataProviderKeys' => Router::DEFAULT_DATA_PROVIDER_KEY,
-    ];
+    protected static function config()
+    {
+        return [
+            'view' => ['viewRenderClass' => 'Ice:Smarty'],
+            'actions' => 'Wi:Handbook_Menu',
+            'input' => ['article' => 'router']
+        ];
+    }
 
     /**
      * Run action
@@ -45,7 +71,7 @@ class Handbook extends Action
      */
     public function run(array $input)
     {
-        $this->addAction('Wi:Comment', ['article' => $input['article']]);
+        $this->addAction(['Wi:Comment', ['article' => $input['article']]]);
 
         return [
             'article' => !empty($input['article'])
