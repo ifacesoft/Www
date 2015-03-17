@@ -1,18 +1,9 @@
 <?php
 return [
-    'Ice\\Core\\Model' => [
-        'prefixes' => [
-            'wi' => 'Wi',
-        ],
-    ],
-    'Ice\Core\Data_Source' => [
-        'Ice\Data\Source\Mysqli' => [
-            'default' => 'www',
-        ],
-    ],
     'Ice\\Core\\Request' => [
         'multiLocale' => 1,
         'locale' => 'ru',
+        'cors' => []
     ],
     'Ice\\Core\\Environment' => [
         'environments' => [

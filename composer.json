@@ -3,7 +3,7 @@
     "type": "library",
     "description": "Www",
     "config": {
-        "vendor-dir": "..\/_vendor"
+        "vendor-dir": "..\/_vendor\/Www"
     },
     "repositories": [
         {
@@ -20,9 +20,7 @@
     ],
     "require": {
         "php": ">=5.4",
-        "smarty\/smarty": "3.1.19",
-        "twig\/twig": "1.16.1",
-        "twbs\/bootstrap": "3.3.1",
+        "ifacesoft/ice": "0.5.*",
         "jquery\/jquery-ui": "1.11.1",
         "mrclay\/minify": "dev-master",
         "firephp\/firephp-core": "dev-master",
