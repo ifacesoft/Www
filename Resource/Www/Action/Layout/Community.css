@@ -1,0 +1,24 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    margin-bottom: 52px;
+}
+
+
+#Layout_Community {
+    color:#777;
+}
+
+#Layout_Community code {
+    background-color: inherit;
+}
+
+.footer {
+    bottom: 0;
+    height: 52px;
+    position: absolute;
+    width: 100%;
+}
