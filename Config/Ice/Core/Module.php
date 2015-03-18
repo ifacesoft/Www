@@ -15,11 +15,11 @@ return [
         'configDir' => 'Config/',
         'sourceDir' => 'Source/',
         'resourceDir' => 'Resource/',
-        'logDir' => '../_log/Ice/',
-        'cacheDir' => '../_cache/Ice/',
-        'uploadDir' => '../_upload/Ice/',
-        'downloadDir' => '../_download/Ice/',
-        'compiledResourceDir' => '../_resource/Ice/resource'
+        'logDir' => '../_log/Www/',
+        'cacheDir' => '../_cache/Www/',
+        'uploadDir' => '../_upload/Www/',
+        'downloadDir' => '../_download/Www/',
+        'compiledResourceDir' => '../_resource/Www/resource'
     ],
     'vendors' => [
 //        'dp-ifacesoft/blog' => '/blog',

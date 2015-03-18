@@ -9,22 +9,34 @@
         {
             "type": "package",
             "package": {
-                "name": "jquery\/jquery-ui",
+                "name": "jquery/jquery-ui",
                 "version": "1.11.1",
                 "dist": {
-                    "url": "http:\/\/jqueryui.com\/resources\/download\/jquery-ui-1.11.1.zip",
+                    "url": "http://jqueryui.com/resources/download/jquery-ui-1.11.1.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "mailru/fileapi",
+                "version": "2.0.10",
+                "dist": {
+                    "url": "https://github.com/mailru/FileAPI/archive/master.zip",
                     "type": "zip"
                 }
             }
         }
     ],
     "require": {
-        "php": ">=5.4",
+        "php": ">=5.5.0",
         "ifacesoft/ice": "0.5.*",
-        "jquery\/jquery-ui": "1.11.1",
-        "mrclay\/minify": "dev-master",
-        "firephp\/firephp-core": "dev-master",
-        "phpdocumentor/phpdocumentor": "dev-master",
-        "dompdf/dompdf": "0.6.1"
+        "twbs/bootstrap": "3.3.*",
+        "jquery/jquery-ui": "1.11.1",
+        "mailru/fileapi": "2.0.10",
+        "mrclay/minify": "dev-master",
+        "firephp/firephp-core": "dev-master",
+        "facebook/xhprof": "dev-master"
     }
 }

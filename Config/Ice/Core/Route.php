@@ -1,59 +1,59 @@
 <?php
 return [
-    'wi_main' => [
+    'www_main' => [
         'route' => '/',
         'weight' => 10000,
         'request' => [
             'GET' => [
-                'Wi:Layout_Main' => [
+                'Www:Layout_Main' => [
                     'actions' => [
                         ['title' => 'Ice:Title', ['title' => 'Ice - Open Source PHP Framework ']],
-                        'main' => 'Wi:Index'
+                        'main' => 'Www:Index'
                     ]
                 ]
             ]
         ]
     ],
-    'wi_handbook' => [
+    'www_handbook' => [
         'route' => '/handbook{$article}',
         'params' => [
             'article' => ['/(.*)', true]
         ],
         'request' => [
             'GET' => [
-                'Wi:Layout_Main' => [
+                'Www:Layout_Main' => [
                     'actions' => [
                         ['title' => 'Ice:Title', ['title' => 'Ice - Руководство (Handbook)']],
-                        'main' => 'Wi:Handbook'
+                        'main' => 'Www:Handbook'
                     ]
                 ]
             ]
         ]
     ],
-    'wi_cookbook' => [
+    'www_cookbook' => [
         'route' => '/cookbook{$article}',
         'params' => [
             'article' => ['/(.*)', true]
         ],
         'request' => [
             'GET' => [
-                'Wi:Layout_Main' => [
+                'Www:Layout_Main' => [
                     'actions' => [
                         ['title' => 'Ice:Title', ['title' => 'Ice - Полезные статьи (Cookbook)']],
-                        'main' => 'Wi:Cookbook'
+                        'main' => 'Www:Cookbook'
                     ]
                 ]
             ]
         ]
     ],
-    'wi_faq' => [
+    'www_faq' => [
         'route' => '/faq',
         'request' => [
             'GET' => [
-                'Wi:Layout_Main' => [
+                'Www:Layout_Main' => [
                     'actions' => [
                         ['title' => 'Ice:Title', ['title' => 'F.A.Q']],
-                        'main' => 'Wi:Faq'
+                        'main' => 'Www:Faq'
                     ]
                 ]
             ]
