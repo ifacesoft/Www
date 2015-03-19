@@ -1,0 +1,389 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "68b3f68935c2362e2e2c0f51a23dccd7",
+    "packages": [
+        {
+            "name": "facebook/xhprof",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lox/xhprof.git",
+                "reference": "6bf00728827fc1e2a639dff6f94f1618396bffc5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lox/xhprof/zipball/6bf00728827fc1e2a639dff6f94f1618396bffc5",
+                "reference": "6bf00728827fc1e2a639dff6f94f1618396bffc5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "xhprof_lib/utils/xhprof_lib.php",
+                    "xhprof_lib/utils/xhprof_runs.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "XHProf: A Hierarchical Profiler for PHP",
+            "homepage": "http://pecl.php.net/package/xhprof",
+            "keywords": [
+                "performance",
+                "profiling"
+            ],
+            "time": "2014-08-29 01:48:15"
+        },
+        {
+            "name": "firephp/firephp-core",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/firephp/firephp-core.git",
+                "reference": "67b5aa8e314eb88f8927d1213ea268effa1dfa3d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/firephp/firephp-core/zipball/67b5aa8e314eb88f8927d1213ea268effa1dfa3d",
+                "reference": "67b5aa8e314eb88f8927d1213ea268effa1dfa3d",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "lib/FirePHPCore/FirePHP.class.php",
+                    "lib/FirePHPCore/fb.php"
+                ],
+                "files": [
+                    "lib/FirePHPCore/fb.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christoph Dorn",
+                    "email": "christoph@christophdorn.com",
+                    "homepage": "http://christophdorn.com"
+                }
+            ],
+            "description": "Traditional FirePHPCore library for sending PHP variables to the browser.",
+            "homepage": "https://github.com/firephp/firephp-core",
+            "time": "2014-11-26 18:59:18"
+        },
+        {
+            "name": "ifacesoft/ice",
+            "version": "0.5.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ifacesoft/Ice.git",
+                "reference": "89b8f4246323e71fcb6ac6c9ad04202000f96a0d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ifacesoft/Ice/zipball/89b8f4246323e71fcb6ac6c9ad04202000f96a0d",
+                "reference": "89b8f4246323e71fcb6ac6c9ad04202000f96a0d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0",
+                "smarty/smarty": "3.1.*",
+                "twig/twig": "1.*"
+            },
+            "require-dev": {
+                "facebook/xhprof": "dev-master",
+                "firephp/firephp-core": "dev-master",
+                "ocramius/instantiator": "1.1.*",
+                "phpunit/dbunit": "1.3.*",
+                "phpunit/php-invoker": "1.1.*",
+                "phpunit/phpunit": "4.4.*",
+                "phpunit/phpunit-selenium": "1.4.*",
+                "phpunit/phpunit-story": "1.0.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ice\\": "Source/Ice/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD ICE"
+            ],
+            "authors": [
+                {
+                    "name": "dp",
+                    "email": "denis.a.shestakov@gmail.com"
+                }
+            ],
+            "description": "Ice Open Source PHP Framework",
+            "homepage": "http://iceframework.net",
+            "keywords": [
+                "database",
+                "framework",
+                "http",
+                "ice",
+                "iceframework",
+                "ifacesoft",
+                "mongodb",
+                "mysql",
+                "orm",
+                "web"
+            ],
+            "time": "2015-03-18 20:09:57"
+        },
+        {
+            "name": "jquery/jquery-ui",
+            "version": "1.11.1",
+            "dist": {
+                "type": "zip",
+                "url": "http://jqueryui.com/resources/download/jquery-ui-1.11.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library"
+        },
+        {
+            "name": "mailru/fileapi",
+            "version": "2.0.10",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/mailru/FileAPI/archive/master.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library"
+        },
+        {
+            "name": "mrclay/minify",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mrclay/minify.git",
+                "reference": "3c11ba8232a2155a1a29552aafc528be5fb0a662"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mrclay/minify/zipball/3c11ba8232a2155a1a29552aafc528be5fb0a662",
+                "reference": "3c11ba8232a2155a1a29552aafc528be5fb0a662",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pcre": "*",
+                "php": ">=5.2.1"
+            },
+            "require-dev": {
+                "tubalmartin/cssmin": "~2.4.8"
+            },
+            "suggest": {
+                "tubalmartin/cssmin": "Support minify with CSSMin (YUI PHP port)"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "min/lib/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Stephen Clay",
+                    "email": "steve@mrclay.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Minify is a PHP5 app that helps you follow several rules for client-side performance. It combines multiple CSS or Javascript files, removes unnecessary whitespace and comments, and serves them with gzip encoding and optimal client-side cache headers",
+            "homepage": "http://code.google.com/p/minify/",
+            "time": "2014-10-30 22:58:02"
+        },
+        {
+            "name": "smarty/smarty",
+            "version": "v3.1.21",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/smarty-php/smarty.git",
+                "reference": "1f878e6d746ecc8ec8d00d9c75044cf7d23ad94a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/1f878e6d746ecc8ec8d00d9c75044cf7d23ad94a",
+                "reference": "1f878e6d746ecc8ec8d00d9c75044cf7d23ad94a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "libs/Smarty.class.php",
+                    "libs/SmartyBC.class.php",
+                    "libs/sysplugins/smarty_security.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Monte Ohrt",
+                    "email": "monte@ohrt.com"
+                },
+                {
+                    "name": "Uwe Tews",
+                    "email": "uwe.tews@googlemail.com"
+                },
+                {
+                    "name": "Rodney Rehm",
+                    "email": "rodney.rehm@medialize.de"
+                }
+            ],
+            "description": "Smarty - the compiling PHP template engine",
+            "homepage": "http://www.smarty.net",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2014-10-31 04:22:20"
+        },
+        {
+            "name": "twbs/bootstrap",
+            "version": "v3.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twbs/bootstrap.git",
+                "reference": "a10eb60bc0b07b747fa0c4ebd8821eb7307bd07f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/a10eb60bc0b07b747fa0c4ebd8821eb7307bd07f",
+                "reference": "a10eb60bc0b07b747fa0c4ebd8821eb7307bd07f",
+                "shasum": ""
+            },
+            "replace": {
+                "twitter/bootstrap": "self.version"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jacob Thornton",
+                    "email": "jacobthornton@gmail.com"
+                },
+                {
+                    "name": "Mark Otto",
+                    "email": "markdotto@gmail.com"
+                }
+            ],
+            "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+            "homepage": "http://getbootstrap.com",
+            "keywords": [
+                "JS",
+                "css",
+                "framework",
+                "front-end",
+                "less",
+                "mobile-first",
+                "responsive",
+                "web"
+            ],
+            "time": "2015-03-16 15:44:41"
+        },
+        {
+            "name": "twig/twig",
+            "version": "v1.18.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twigphp/Twig.git",
+                "reference": "4cf7464348e7f9893a93f7096a90b73722be99cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/4cf7464348e7f9893a93f7096a90b73722be99cf",
+                "reference": "4cf7464348e7f9893a93f7096a90b73722be99cf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.18-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Twig_": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
+                },
+                {
+                    "name": "Twig Team",
+                    "homepage": "http://twig.sensiolabs.org/contributors",
+                    "role": "Contributors"
+                }
+            ],
+            "description": "Twig, the flexible, fast, and secure template language for PHP",
+            "homepage": "http://twig.sensiolabs.org",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2015-01-25 17:32:08"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "mrclay/minify": 20,
+        "firephp/firephp-core": 20,
+        "facebook/xhprof": 20
+    },
+    "prefer-stable": false,
+    "platform": {
+        "php": ">=5.5.0"
+    },
+    "platform-dev": []
+}
