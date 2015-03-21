@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "68b3f68935c2362e2e2c0f51a23dccd7",
+    "hash": "aef0e987a39eceed2807c6fffec76b6b",
     "packages": [
         {
             "name": "facebook/xhprof",
@@ -83,20 +83,20 @@
         },
         {
             "name": "ifacesoft/ice",
-            "version": "0.5.11",
+            "version": "0.5.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ifacesoft/Ice.git",
-                "reference": "89b8f4246323e71fcb6ac6c9ad04202000f96a0d"
+                "reference": "6385746fcc953bf3e4e842443ebcd5aba4e03248"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ifacesoft/Ice/zipball/89b8f4246323e71fcb6ac6c9ad04202000f96a0d",
-                "reference": "89b8f4246323e71fcb6ac6c9ad04202000f96a0d",
+                "url": "https://api.github.com/repos/ifacesoft/Ice/zipball/6385746fcc953bf3e4e842443ebcd5aba4e03248",
+                "reference": "6385746fcc953bf3e4e842443ebcd5aba4e03248",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.0",
+                "php": ">=5.5",
                 "smarty/smarty": "3.1.*",
                 "twig/twig": "1.*"
             },
@@ -140,7 +140,7 @@
                 "orm",
                 "web"
             ],
-            "time": "2015-03-18 20:09:57"
+            "time": "2015-03-19 20:44:39"
         },
         {
             "name": "jquery/jquery-ui",
@@ -377,6 +377,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "ifacesoft/ice": 20,
         "mrclay/minify": 20,
         "firephp/firephp-core": 20,
         "facebook/xhprof": 20
