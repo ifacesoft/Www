@@ -10,6 +10,8 @@
  * @since 0.0
  */
 
-require_once 'bootstrap.php';
+define('ICE_DIR', realpath(__DIR__ . '../../ifacesoft/ice') . '/');
 
-Ice::create(dirname(MODULE_DIR))->run();
+require_once ICE_DIR . 'Source/Ice/Bootstrap.php';
+
+\Ice\App::run();
