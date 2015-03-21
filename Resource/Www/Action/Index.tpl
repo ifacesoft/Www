@@ -1,35 +1,35 @@
 <div id="fb-root"></div>
-<script>(function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.0&appId=1398920987078554";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-<div class="row">
-    <div class="col-md-8">
-        <h1>
+
+        <script>(function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.0&appId=1398920987078554";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+        <div class="row">
+            <div class="col-md-8">
+                <h1>
             <span style="font-family: DaxlineBold;">
                 Ice</span> - <span style="font-family: DaxlineThin;">
                 {$resource.Index->get('быстрый и понятный инструмент для веб-разработки.')}
             </span>
-        </h1>
+                </h1>
 
-        <p>
-            <img src="https://poser.pugx.org/ifacesoft/ice/v/stable.svg">
-            <img src="https://poser.pugx.org/ifacesoft/ice/v/unstable.svg">
-            <img src="https://scrutinizer-ci.com/g/ifacesoft/Ice/badges/quality-score.png?b=master">
-            <img src="https://scrutinizer-ci.com/g/ifacesoft/Ice/badges/coverage.png?b=master">
-            <img src="https://poser.pugx.org/ifacesoft/ice/downloads.svg">
-            <img src="https://poser.pugx.org/ifacesoft/ice/license.svg">
-        </p>
+                <p>
+                    <img src="https://poser.pugx.org/ifacesoft/ice/v/stable.svg">
+                    <img src="https://poser.pugx.org/ifacesoft/ice/v/unstable.svg">
+                    <img src="https://scrutinizer-ci.com/g/ifacesoft/Ice/badges/quality-score.png?b=master">
+                    <img src="https://scrutinizer-ci.com/g/ifacesoft/Ice/badges/coverage.png?b=master">
+                    <img src="https://poser.pugx.org/ifacesoft/ice/downloads.svg">
+                    <img src="https://poser.pugx.org/ifacesoft/ice/license.svg">
+                </p>
 
-        <p>
-            Ice
-            - {$resource.Index->get('php-фреймворк общего назначения. Вы можете просто создавать сложные веб-приложения, полностью положившись на Ice. Ключевыми возможностями Ice является встроенная поддержка кеширования основных компонентов, гибкая настройка и возможность простого расширения имеющегося функционала.')}
-        </p>
-
+                <p>
+                    Ice
+                    - {$resource.Index->get('php-фреймворк общего назначения. Вы можете просто создавать сложные веб-приложения, полностью положившись на Ice. Ключевыми возможностями Ice является встроенная поддержка кеширования основных компонентов, гибкая настройка и возможность простого расширения имеющегося функционала.')}
+                </p>
         <h2 style="font-family: DaxlineMedium;">{$resource.Index->get('Краткая презентация')}</h2>
 
         <iframe src="http://www.slideshare.net/DenisShestakov/slideshelf" width="760px" height="570px" frameborder="0"
