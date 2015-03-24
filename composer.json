@@ -1,5 +1,5 @@
 {
-    "name": "Www",
+    "name": "ifacesoft/www",
     "type": "library",
     "description": "Www",
     "config": {
@@ -31,7 +31,7 @@
     ],
     "require": {
         "php": ">=5.5.0",
-        "ifacesoft/ice": "0.5.*@dev",
+        "ifacesoft/ice": "dev-master",
         "twbs/bootstrap": "3.3.*",
         "jquery/jquery-ui": "1.11.1",
         "mailru/fileapi": "2.0.10",

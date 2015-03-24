@@ -12,17 +12,17 @@ return [
         'Ice\Core\Data_Source' => [
             'Ice\Data\Source\Mysqli/default.www' => ['www_', 'ice_']
         ],
-        'configDir' => 'Config/',
-        'sourceDir' => 'Source/',
-        'resourceDir' => 'Resource/',
-        'logDir' => '../_log/Www/',
-        'cacheDir' => '../_cache/Www/',
-        'uploadDir' => '../_upload/Www/',
-        'downloadDir' => '../_download/Www/',
-        'compiledResourceDir' => '../_resource/Www/resource'
+        'configDir' => MODULE_DIR . 'Config/',
+        'sourceDir' => MODULE_DIR . 'Source/',
+        'resourceDir' => MODULE_DIR . 'Resource/',
+        'logDir' => VENDOR_DIR . '_log/',
+        'cacheDir' => VENDOR_DIR . '_cache/',
+        'uploadDir' => VENDOR_DIR . '_upload/',
+        'downloadDir' => VENDOR_DIR . '_download/',
+        'compiledResourceDir' => VENDOR_DIR . '_resource/'
     ],
     'vendors' => [
-//        'dp-ifacesoft/blog' => '/blog',
+//        'ifacesoft/blog' => '/blog',
         'ifacesoft/ice' => '/ice'
     ],
 ];

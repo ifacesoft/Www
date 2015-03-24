@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "aef0e987a39eceed2807c6fffec76b6b",
+    "hash": "f3aa190b7294876fcc1f7579f3386bd0",
     "packages": [
         {
             "name": "facebook/xhprof",
@@ -83,16 +83,16 @@
         },
         {
             "name": "ifacesoft/ice",
-            "version": "0.5.12",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ifacesoft/Ice.git",
-                "reference": "6385746fcc953bf3e4e842443ebcd5aba4e03248"
+                "reference": "5466a79515a12b66905b1073c2a5f4d193d6889a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ifacesoft/Ice/zipball/6385746fcc953bf3e4e842443ebcd5aba4e03248",
-                "reference": "6385746fcc953bf3e4e842443ebcd5aba4e03248",
+                "url": "https://api.github.com/repos/ifacesoft/Ice/zipball/5466a79515a12b66905b1073c2a5f4d193d6889a",
+                "reference": "5466a79515a12b66905b1073c2a5f4d193d6889a",
                 "shasum": ""
             },
             "require": {
@@ -114,7 +114,8 @@
             "autoload": {
                 "psr-4": {
                     "Ice\\": "Source/Ice/"
-                }
+                },
+                "files": []
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -140,7 +141,7 @@
                 "orm",
                 "web"
             ],
-            "time": "2015-03-19 20:44:39"
+            "time": "2015-03-21 20:34:27"
         },
         {
             "name": "jquery/jquery-ui",
