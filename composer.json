@@ -3,7 +3,7 @@
     "type": "library",
     "description": "Www",
     "config": {
-        "vendor-dir": "../../"
+        "vendor-dir": "../_vendor/"
     },
     "repositories": [
         {

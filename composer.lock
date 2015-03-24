@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f3aa190b7294876fcc1f7579f3386bd0",
+    "hash": "385cbca64cf15562439516e4758fbca0",
     "packages": [
         {
             "name": "facebook/xhprof",
@@ -87,20 +87,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ifacesoft/Ice.git",
-                "reference": "5466a79515a12b66905b1073c2a5f4d193d6889a"
+                "reference": "c55621c9848520f5dbe73d29e742fe02c1968df5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ifacesoft/Ice/zipball/5466a79515a12b66905b1073c2a5f4d193d6889a",
-                "reference": "5466a79515a12b66905b1073c2a5f4d193d6889a",
+                "url": "https://api.github.com/repos/ifacesoft/Ice/zipball/c55621c9848520f5dbe73d29e742fe02c1968df5",
+                "reference": "c55621c9848520f5dbe73d29e742fe02c1968df5",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5",
+                "php": ">=5.4.0",
                 "smarty/smarty": "3.1.*",
                 "twig/twig": "1.*"
             },
             "require-dev": {
+                "composer/composer": "dev-master",
                 "facebook/xhprof": "dev-master",
                 "firephp/firephp-core": "dev-master",
                 "ocramius/instantiator": "1.1.*",
@@ -141,7 +142,7 @@
                 "orm",
                 "web"
             ],
-            "time": "2015-03-21 20:34:27"
+            "time": "2015-03-24 13:36:53"
         },
         {
             "name": "jquery/jquery-ui",

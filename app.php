@@ -10,6 +10,8 @@
  * @since 0.0
  */
 
-require_once 'bootstrap.php';
+define('VENDOR_DIR', realpath(__DIR__ . '/../_vendor') . '/');
+
+require_once VENDOR_DIR . 'ifacesoft/ice/bootstrap.php';
 
 \Ice\App::run();
