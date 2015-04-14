@@ -4,10 +4,8 @@ namespace Www\Action;
 use Ice;
 use Ice\Action\Layout;
 use Ice\Core\Action;
-use Ice\Core\Action_Context;
-use Ice\Core\Request;
 use Ice\Core\Security;
-use Ice\Menu\Navbar;
+use Ice\Ui\Menu\Navbar;
 
 /**
  * Class Layout_Main
@@ -67,8 +65,9 @@ class Layout_Main extends Layout
 
     public function run(array $input)
     {
-        $menu = Navbar::getInstance('Topmenu')
+        $menu = Navbar::create()
             ->dropdown(
+                'doc',
                 'Документация',
                 [
                     'Руководство (Handbook)' => '/handbook',
@@ -77,21 +76,39 @@ class Layout_Main extends Layout
                     'Часто задаваемые вопросы (Faq)' => '/faq'
                 ])
             ->dropdown(
+                'comm',
                 'Сообщество',
                 [
                     'Блог' => '/blog',
 //                        'Форум' => '/forum'
                 ])
-            ->link('Приложения', '/apps')
-            ->button('<span class="glyphicon glyphicon-qrcode"></span> Войти', 'location.href="' . Ice::get('Ice\Core\Route')->getUrl('ice_security_login') . '";', 'right', !Security::getUser())
-            ->button('<span class="glyphicon glyphicon-log-out"></span> Выйти', 'location.href="' . Ice::get('Ice\Core\Route')->getUrl('ice_security_logout') . '";', 'right', Security::getUser());
-
-        $this->addAction(['Ice:Menu_Navbar', ['menu' => $menu]]);
+            ->link('apps', 'Приложения', ['href' => '/apps'])
+            ->button(
+                'login',
+                'Войти',
+                [
+                    'glyphicon' => 'qrcode',
+                    'routeName' => 'ice_security_login',
+                    'position' => 'right',
+                    'show' => !Security::getUser(),
+                ]
+            )
+            ->button(
+                'login',
+                'Войти',
+                [
+                    'glyphicon' => 'log-out',
+                    'routeName' => 'ice_security_logout',
+                    'position' => 'right',
+                    'show' => Security::getUser(),
+                ]
+            );
 
         return array_merge(
             parent::run($input),
             [
-                'user' => Security::getUser()
+                'user' => Security::getUser(),
+                'menu' => $menu
             ]
         );
     }

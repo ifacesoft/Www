@@ -7,8 +7,8 @@ return [
             'GET' => [
                 'Www:Layout_Main' => [
                     'actions' => [
-                        ['title' => 'Ice:Title', ['title' => 'Ice - Open Source PHP Framework ']],
-                        'main' => 'Www:Index'
+                        ['Ice:Title' => 'title' , ['title' => 'Ice - Open Source PHP Framework ']],
+                        'Www:Index' => 'main'
                     ]
                 ]
             ]
@@ -23,8 +23,8 @@ return [
             'GET' => [
                 'Www:Layout_Main' => [
                     'actions' => [
-                        ['title' => 'Ice:Title', ['title' => 'Ice - Руководство (Handbook)']],
-                        'main' => 'Www:Handbook'
+                        ['Ice:Title' => 'title' , ['title' => 'Ice - Руководство (Handbook)']],
+                        'Www:Handbook' => 'main'
                     ]
                 ]
             ]
@@ -39,8 +39,8 @@ return [
             'GET' => [
                 'Www:Layout_Main' => [
                     'actions' => [
-                        ['title' => 'Ice:Title', ['title' => 'Ice - Полезные статьи (Cookbook)']],
-                        'main' => 'Www:Cookbook'
+                        ['Ice:Title' => 'title', ['title' => 'Ice - Полезные статьи (Cookbook)']],
+                        'Www:Cookbook' => 'main'
                     ]
                 ]
             ]
@@ -52,8 +52,8 @@ return [
             'GET' => [
                 'Www:Layout_Main' => [
                     'actions' => [
-                        ['title' => 'Ice:Title', ['title' => 'F.A.Q']],
-                        'main' => 'Www:Faq'
+                        ['Ice:Title' => 'title', ['title' => 'F.A.Q']],
+                        'Www:Faq' => 'main'
                     ]
                 ]
             ]
