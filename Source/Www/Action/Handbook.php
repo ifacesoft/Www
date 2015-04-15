@@ -5,6 +5,8 @@ use Ice\Core\Action;
 use Ice\Core\Action_Context;
 use Ice\Core\Logger;
 use Ice\Data\Provider\Router;
+use Ice\Ui\Menu\Nav;
+use Ice\Ui\Menu\Navbar;
 use Ice\View\Render\Smarty;
 
 /**
@@ -58,8 +60,6 @@ class Handbook extends Action
     {
         return [
             'view' => ['viewRenderClass' => 'Ice:Smarty'],
-            'actions' => 'Www:Handbook_Menu',
-            'input' => ['article' => 'router']
         ];
     }
 
@@ -71,12 +71,23 @@ class Handbook extends Action
      */
     public function run(array $input)
     {
-        $this->addAction(['Www:Comment', ['article' => $input['article']]]);
+        $menu =
+            Nav::create()
+                ->nav('preface', 'Предисловие',
+                    Nav::create()
+                        ->item('introduction', 'Введение')
+                        ->item('quick_start', 'Быстрый старт')
+                        ->item('useful_resources', 'Полезные ресурсы')
+                        ->item('contributing', 'Поддержка проекта')
+                )
+                ->nav('getting_started', 'Начало работы',
+                    Nav::create()
+                        ->item('installation', 'Установка')
+                        ->item('configuration', 'Конфигурирование')
+                );
 
         return [
-            'article' => !empty($input['article'])
-                ? Smarty::getInstance()->fetch('Www\Action\Handbook_' . $input['article'])
-                : Smarty::getInstance()->fetch('Www\Action\Handbook_getting_started')
+            'menu' => $menu
         ];
     }
 }

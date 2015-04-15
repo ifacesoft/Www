@@ -27,6 +27,17 @@
                     "type": "zip"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "bryanbraun/anchorjs",
+                "version": "0.3.1",
+                "dist": {
+                    "url": "https://github.com/bryanbraun/anchorjs/archive/gh-pages.zip",
+                    "type": "zip"
+                }
+            }
         }
     ],
     "require": {
@@ -34,6 +45,7 @@
         "twbs/bootstrap": "3.3.*",
         "jquery/jquery-ui": "1.11.4",
         "mailru/fileapi": "2.0.10",
+        "bryanbraun/anchorjs": "0.3.1",
         "ifacesoft/ice": "0.6.*@dev"
     }
 }

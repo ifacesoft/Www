@@ -58,7 +58,6 @@ class Index extends Action
     {
         return [
             'view' => ['viewRenderClass' => 'Ice:Smarty'],
-            'actions' => 'Www:Handbook_Menu',
             'output' => ['resource' => 'Ice:Resource/Www\Action\Index']
         ];
     }

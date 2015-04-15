@@ -56,6 +56,14 @@ return [
                                 'css_replace' => ['url(../', 'url('],
                             ],
                         ],
+                        'bryanbraun/anchorjs' => [
+                            'anchorjs' => [
+                                'path' => '',
+                                'js' => ['-anchor.min.js'],
+                                'css' => ['anchor.css'],
+                                'isCopy' => false,
+                            ],
+                        ],
                     ],
                 ],
             ],

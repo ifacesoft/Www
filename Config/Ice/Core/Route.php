@@ -15,10 +15,7 @@ return [
         ]
     ],
     'www_handbook' => [
-        'route' => '/handbook{$article}',
-        'params' => [
-            'article' => ['/(.*)', true]
-        ],
+        'route' => '/handbook',
         'request' => [
             'GET' => [
                 'Www:Layout_Main' => [
