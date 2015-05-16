@@ -1,9 +1,15 @@
 *.orig
 
 .hg
+.git
 
 .idea
 
 composer.phar
 
-_vendor
+Var/cache
+Var/log
+Var/upload
+Var/vendor
+
+Web/resource

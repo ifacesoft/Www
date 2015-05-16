@@ -1,0 +1,27 @@
+.guide-sidebar .nav > li > a {
+    color: #767676;
+    font-family: DaxlineMedium;
+}
+
+.guide-sidebar .nav > .active > nav ul {
+    display: block;
+}
+
+.guide-sidebar .nav .nav {
+    display: none;
+}
+
+.guide-sidebar .nav .nav > li > a {
+    font-family: DaxlineRegular;
+}
+
+.guide-sidebar .nav > .active:focus > a, .guide-sidebar .nav > .active:hover > a, .guide-sidebar .nav > .active > a {
+    background-color: transparent;
+    border-left: 2px solid #000000;
+    padding-left: 18px;
+    color: #000000;
+}
+
+.guide h3 {
+    text-decoration: underline;
+}

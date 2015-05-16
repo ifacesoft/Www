@@ -10,18 +10,18 @@ return [
         'vcs' => 'git',
         'source' => 'https://github.com/ifacesoft/Www.git',
         'Ice\Core\Data_Source' => [
-            'Ice\Data\Source\Mysqli/default.www' => ['www_', 'ice_']
+//            'Ice\Data\Source\Mysqli/default.www' => ['www_']
         ],
         'configDir' => 'Config/',
         'sourceDir' => 'Source/',
         'resourceDir' => 'Resource/',
-        'logDir' => '../_log/',
-        'cacheDir' => '../_cache/',
-        'uploadDir' => '../_upload/',
-        'downloadDir' => '../_download/',
-        'compiledResourceDir' => '../_resource/'
+        'logDir' => 'Var/log/',
+        'cacheDir' => 'Var/cache/',
+        'uploadDir' => 'Var/upload/',
+        'compiledResourceDir' => 'Web/resource/',
+        'downloadDir' => 'Web/download/',
     ],
-    'vendors' => [
+    'modules' => [
 //        'ifacesoft/blog' => '/blog',
         'ifacesoft/ice' => '/ice'
     ],

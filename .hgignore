@@ -5,10 +5,19 @@ syntax: regexp
 \.rej$
 \.conflict\~$
 
-^/.git
-^/.hg
+^\.git
+^\.hg
 
-^composer\.lock$
+^\.idea
 
 ^Resource/api
 ^Resource/uml
+
+^Var/cache
+^Var/log
+^Var/upload
+^Var/vendor
+
+^Web/resource
+
+composer.phar

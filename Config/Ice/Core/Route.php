@@ -7,56 +7,59 @@ return [
             'GET' => [
                 'Www:Layout_Main' => [
                     'actions' => [
-                        ['title' => 'Ice:Title', ['title' => 'Ice - Open Source PHP Framework ']],
-                        'main' => 'Www:Index'
+                        ['Ice:Title' => 'title', ['title' => 'Ice - Open Source PHP Framework ']],
+                        'Www:Index' => 'main'
                     ]
                 ]
             ]
         ]
     ],
-    'www_handbook' => [
-        'route' => '/handbook{$article}',
-        'params' => [
-            'article' => ['/(.*)', true]
-        ],
+    'www_guide' => [
+        'route' => '/guide',
         'request' => [
             'GET' => [
                 'Www:Layout_Main' => [
                     'actions' => [
-                        ['title' => 'Ice:Title', ['title' => 'Ice - Руководство (Handbook)']],
-                        'main' => 'Www:Handbook'
+                        ['Ice:Title' => 'title', ['title' => 'Ice - Guide']],
+                        'Www:Guide' => 'main'
                     ]
                 ]
             ]
         ]
     ],
-    'www_cookbook' => [
-        'route' => '/cookbook{$article}',
-        'params' => [
-            'article' => ['/(.*)', true]
-        ],
+//    'www_cookbook' => [
+//        'route' => '/cookbook{$article}',
+//        'params' => [
+//            'article' => ['/(.*)', true]
+//        ],
+//        'request' => [
+//            'GET' => [
+//                'Www:Layout_Main' => [
+//                    'actions' => [
+//                        ['Ice:Title' => 'title', ['title' => 'Ice - Полезные статьи (Cookbook)']],
+//                        'Www:Cookbook' => 'main'
+//                    ]
+//                ]
+//            ]
+//        ]
+//    ],
+//    'www_faq' => [
+//        'route' => '/faq',
+//        'request' => [
+//            'GET' => [
+//                'Www:Layout_Main' => [
+//                    'actions' => [
+//                        ['Ice:Title' => 'title', ['title' => 'F.A.Q']],
+//                        'Www:Faq' => 'main'
+//                    ]
+//                ]
+//            ]
+//        ]
+//    ],
+    'www_api_log_error' => [
+        'route' => '/api/log/error',
         'request' => [
-            'GET' => [
-                'Www:Layout_Main' => [
-                    'actions' => [
-                        ['title' => 'Ice:Title', ['title' => 'Ice - Полезные статьи (Cookbook)']],
-                        'main' => 'Www:Cookbook'
-                    ]
-                ]
-            ]
-        ]
-    ],
-    'www_faq' => [
-        'route' => '/faq',
-        'request' => [
-            'GET' => [
-                'Www:Layout_Main' => [
-                    'actions' => [
-                        ['title' => 'Ice:Title', ['title' => 'F.A.Q']],
-                        'main' => 'Www:Faq'
-                    ]
-                ]
-            ]
+            'POST' => 'Www:Api_Log_Error'
         ]
     ]
 ];
