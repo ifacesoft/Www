@@ -29,7 +29,7 @@ class Index extends Action
      * @author anonymous <email>
      *
      * @version 0
-     * @since   0
+     * @since 0
      */
     protected static function config()
     {
