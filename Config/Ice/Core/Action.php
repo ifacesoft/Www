@@ -1,6 +1,60 @@
 <?php
 return [
-    'Ice\Action\Resources' => [
+    'Ice\Action\Resource_Css' => [
+        'input' => [
+            'resources' => [
+                'default' => [
+                    'modules' => [
+                        'Www' => [
+                            'vendor_css' => [
+                                'path' => 'css/vendor/',
+                                'css' => [],
+                                'isCopy' => false,
+                            ],
+                            'vendor' => [
+                                'path' => 'vendor/',
+                                'css' => [],
+                                'isCopy' => false,
+                            ],
+                            'common' => [
+                                'path' => '',
+                                'css' => [],
+                                'isCopy' => false,
+                            ],
+                            'module' => [
+                                'path' => 'Ice/',
+                                'css' => [],
+                                'isCopy' => false,
+                            ],
+                            'vendorHighlight' => [
+                                'path' => 'vendor/highlight/',
+                                'css' => ['styles/default.css'],
+                                'isCopy' => false,
+                            ],
+                        ]
+                    ],
+                    'vendors' => [
+                        'jquery/jquery-ui' => [
+                            'jquery' => [
+                                'path' => '/',
+                                'css' => ['-jquery-ui.min.css', '-jquery-ui.structure.min.css', '-jquery-ui.theme.min.css'],
+                                'isCopy' => true,
+                            ],
+                        ],
+                        'twbs/bootstrap' => [
+                            'bootstrap' => [
+                                'path' => 'dist/',
+                                'css' => ['-css/bootstrap.min.css', '-css/bootstrap-theme.min.css'],
+                                'isCopy' => true,
+                                'css_replace' => ['url(../', 'url('],
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
+    ],
+    'Ice\Action\Resource_Js' => [
         'input' => [
             'resources' => [
                 'default' => [
@@ -9,31 +63,26 @@ return [
                             'vendor_js' => [
                                 'path' => 'js/vendor/',
                                 'js' => [],
-                                'css' => [],
-                                'isCopy' => false,
-                            ],
-                            'vendor_css' => [
-                                'path' => 'css/vendor/',
-                                'js' => [],
-                                'css' => [],
                                 'isCopy' => false,
                             ],
                             'vendor' => [
                                 'path' => 'vendor/',
                                 'js' => [],
-                                'css' => [],
                                 'isCopy' => false,
                             ],
                             'common' => [
                                 'path' => '',
                                 'js' => [],
-                                'css' => [],
                                 'isCopy' => false,
                             ],
                             'module' => [
                                 'path' => 'Ice/',
                                 'js' => [],
-                                'css' => [],
+                                'isCopy' => false,
+                            ],
+                            'vendorHighlight' => [
+                                'path' => 'vendor/highlight/',
+                                'js' => ['-highlight.pack.js'],
                                 'isCopy' => false,
                             ],
                         ]
@@ -43,7 +92,6 @@ return [
                             'jquery' => [
                                 'path' => '/',
                                 'js' => ['external/jquery/jquery.js', '-jquery-ui.min.js'],
-                                'css' => ['-jquery-ui.min.css', '-jquery-ui.structure.min.css', '-jquery-ui.theme.min.css'],
                                 'isCopy' => true,
                             ],
                         ],
@@ -51,22 +99,19 @@ return [
                             'bootstrap' => [
                                 'path' => 'dist/',
                                 'js' => ['-js/bootstrap.min.js'],
-                                'css' => ['-css/bootstrap.min.css', '-css/bootstrap-theme.min.css'],
                                 'isCopy' => true,
-                                'css_replace' => ['url(../', 'url('],
-                            ],
-                        ],
-                        'bryanbraun/anchorjs' => [
-                            'anchorjs' => [
-                                'path' => '',
-                                'js' => ['-anchor.min.js'],
-                                'css' => ['anchor.css'],
-                                'isCopy' => false,
                             ],
                         ],
                     ],
                 ],
             ],
         ],
+    ],
+    'Ice\Action\Cache_Hit' => [
+        'input' => [
+            'routeNames' => [
+                'default' => ['www_main', 'www_guide']
+            ]
+        ]
     ],
 ];

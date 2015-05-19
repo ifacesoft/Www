@@ -10,4 +10,4 @@
  * @since 0.0
  */
 
-require_once 'app.php';
+require_once __DIR__ . '/app.php';

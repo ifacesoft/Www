@@ -3,7 +3,7 @@
     "type": "library",
     "description": "Www",
     "config": {
-        "vendor-dir": "../_vendor/"
+        "vendor-dir": "Var/vendor"
     },
     "repositories": [
         {
@@ -42,10 +42,13 @@
     ],
     "require": {
         "php": ">=5.4.0",
+        "ifacesoft/ice": "1.0.*",
         "twbs/bootstrap": "3.3.*",
         "jquery/jquery-ui": "1.11.4",
         "mailru/fileapi": "2.0.10",
         "bryanbraun/anchorjs": "0.3.1",
-        "ifacesoft/ice": "0.6.*@dev"
+        "firephp/firephp-core": "dev-master",
+        "facebook/xhprof": "dev-master",
+        "composer/composer": "dev-master"
     }
 }

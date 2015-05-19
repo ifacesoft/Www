@@ -4,8 +4,9 @@ namespace Www\Action;
 use Ice;
 use Ice\Action\Layout;
 use Ice\Core\Action;
+use Ice\Core\Environment;
 use Ice\Core\Security;
-use Ice\Ui\Menu\Navbar;
+use Ice\Widget\Menu\Navbar;
 
 /**
  * Class Layout_Main
@@ -58,57 +59,29 @@ class Layout_Main extends Layout
     {
         return [
             'view' => ['viewRenderClass' => 'Ice:Smarty', 'layout' => ''],
-            'actions' => 'Ice:Resources',
-            'output' => ['resource' => 'Ice:Resource/Www\Action\Layout_Main']
+            'actions' => [
+                'Ice:Header',
+                'Ice:Resource_Css',
+                'Ice:Resource_Js',
+                'Ice:Resource_Dynamic',
+                ['Ice:Seo_Google_Analytics', ['PropertyID' => 'UA-51954794-1' , 'env' => Environment::PRODUCTION]],
+                ['Ice:Seo_Yandex_Metrika_Informer', ['counterNumber' => '25280492' , 'env' => Environment::PRODUCTION]],
+                ['Ice:Seo_Yandex_Metrika_Counter', ['counterNumber' => '25280492' , 'env' => Environment::PRODUCTION]],
+                ['Ice:Seo_LiveInternet_Counter', ['env' => Environment::PRODUCTION]],
+            ],
+            'input' => ['url' => ['providers' => 'router']],
+            'output' => [],
+            'ttl' => -1
         ];
     }
 
     public function run(array $input)
     {
-        $menu = Navbar::create()
-            ->dropdown(
-                'doc',
-                'Документация',
-                [
-                    'Руководство (Handbook)' => '/handbook',
-                    'Полезные статьи (Cookbook)' => '/cookbook',
-                    'Исходный код (Api)' => '/resource/api/Ice/0.0',
-                    'Часто задаваемые вопросы (Faq)' => '/faq'
-                ])
-            ->dropdown(
-                'comm',
-                'Сообщество',
-                [
-                    'Блог' => '/blog',
-//                        'Форум' => '/forum'
-                ])
-            ->link('apps', 'Приложения', ['href' => '/apps'])
-            ->button(
-                'login',
-                'Войти',
-                [
-                    'glyphicon' => 'qrcode',
-                    'routeName' => 'ice_security_login',
-                    'position' => 'right',
-                    'show' => !Security::getUser(),
-                ]
-            )
-            ->button(
-                'login',
-                'Войти',
-                [
-                    'glyphicon' => 'log-out',
-                    'routeName' => 'ice_security_logout',
-                    'position' => 'right',
-                    'show' => Security::getUser(),
-                ]
-            );
-
         return array_merge(
             parent::run($input),
             [
                 'user' => Security::getUser(),
-                'menu' => $menu
+                'environment' => Environment::getInstance()
             ]
         );
     }

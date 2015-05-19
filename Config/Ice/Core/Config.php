@@ -7,11 +7,11 @@ return [
     ],
     'Ice\\Core\\Environment' => [
         'environments' => [
-            '/www.global$/' => 'production',
-            '/www.test$/' => 'test',
-            '/www.local$/' => 'development',
-            '/iceframework.net$/' => 'development',
-            '/iceframework.local$/' => 'development',
+            '/www\.global$/' => 'production',
+            '/www\.test$/' => 'test',
+            '/www\.local$/' => 'development',
+//            '/iceframework\.net$/' => 'development',
+            '/iceframework\.local$/' => 'development',
         ],
     ],
 ];

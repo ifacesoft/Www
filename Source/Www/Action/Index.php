@@ -3,9 +3,12 @@ namespace Www\Action;
 
 use Ice\Core\Action;
 use Ice\Core\Action_Context;
+use Ice\Core\Debuger;
 use Ice\Core\Logger;
 use Ice\Core\Request;
 use Ice\Helper\Api_Client_Yandex_Translate;
+use Ice\Model\Account;
+use Ice\Widget\Form\Simple;
 
 /**
  * Class Index
@@ -21,44 +24,26 @@ class Index extends Action
     /**
      * Action config
      *
-     * example:
-     * ```php
-     *  $config = [
-     *      'actions' => [
-     *          ['Ice:Title', ['title' => 'page title'], 'title'],
-     *          ['Ice:Another_Action, ['param' => 'value']
-     *      ],
-     *      'view' => [
-     *          'layout' => Emmet::PANEL_BODY,
-     *          'template' => _Custom,
-     *          'viewRenderClass' => Ice:Twig,
-     *      ],
-     *      'input' => [
-     *          Request::DEFAULT_DATA_PROVIDER_KEY => [
-     *              'paramFromGETorPOST => [
-     *                  'default' => 'defaultValue',
-     *                  'validators' => ['Ice:PATTERN => PATTERN::LETTERS_ONLY]
-     *                  'type' => 'string'
-     *              ]
-     *          ]
-     *      ],
-     *      'output' => ['Ice:Resource/Ice\Action\Index'],
-     *      'ttl' => 3600,
-     *      'roles' => []
-     *  ];
-     * ```
      * @return array
      *
      * @author anonymous <email>
      *
      * @version 0
-     * @since 0
+     * @since   0
      */
     protected static function config()
     {
         return [
             'view' => ['viewRenderClass' => 'Ice:Smarty'],
-            'output' => ['resource' => 'Ice:Resource/Www\Action\Index']
+            'actions' => [
+//                'Www:Feedback',
+                ['Ice:SocialNetwork_Vkontakte_Widget_Group', ['groupId' => 73142573]],
+//                ['Ice:SocialNetwork_Facebook_Widget_Group', ['groupId' => 1398920987078554]],
+            ],
+            'input' => [],
+            'output' => ['resource' => 'Ice:Resource/Www\Action\Index'],
+            'ttl' => -1,
+            'roles' => []
         ];
     }
 
@@ -70,6 +55,5 @@ class Index extends Action
      */
     public function run(array $input)
     {
-        return ['flags' => Api_Client_Yandex_Translate::getFlags()];
     }
 }
