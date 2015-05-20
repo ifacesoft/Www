@@ -30,8 +30,7 @@
                     <h2>{$resource.Index->get('Быстрый старт')}</h2>
 
                     <h3>1. {$resource.Index->get('Создайте composer.json в директории workspace/MyProject')}</h3>
-                    <pre><code class="bash">$ mkdir -p workspace/MyProject && cd workspace/MyProject
-$ touch composer.json</code></pre>
+                    <pre><code class="bash">$ mkdir -p MyProject && cd MyProject && touch composer.json</code></pre>
 
                     <p>
                         workspace - {$resource.Index->get('ваш рабочая дииректория (logs, caches etc.)')};<br>
@@ -71,7 +70,7 @@ $ touch composer.json</code></pre>
     ],
     "minimum-stability": "stable",
     "config": {
-        "vendor-dir": "../_vendor"
+        "vendor-dir": "Var/vendor"
     },
     "scripts": {
         "post-install-cmd": [
