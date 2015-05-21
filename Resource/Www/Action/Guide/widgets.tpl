@@ -64,8 +64,7 @@
     ->setFoundRows(1234)
     ->setClasses('pagination-sm')
     ->setStyle('margin: 0;')
-    ->setPage(25)
-    ->setLimit(30);</code></pre>
+    ->bind(['page' => 25, 'limit' => 30]);</code></pre>
 
 <h5>{$resource.Guide->get('Результат')}:</h5>
 {$paginationMenu}

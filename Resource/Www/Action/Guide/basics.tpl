@@ -71,6 +71,6 @@ class Page extends Action
 
 <h3 id="templates">{$resource.Guide->get('Шаблоны')}</h3>
 
-<p>{$resource.Guide->get('Рендер шаблона')}</p>
+<h4>{$resource.Guide->get('Рендер Smarty шаблона')}</h4>
 
 <pre><code class="php">Smarty::getInstance()->fetch('Mp\Action\Page', ['var' => 'inTemplate'])</code></pre>
