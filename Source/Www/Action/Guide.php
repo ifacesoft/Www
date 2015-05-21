@@ -156,8 +156,7 @@ class Guide extends Action
             ->setFoundRows(1234)
             ->setClasses('pagination-sm')
             ->setStyle('margin: 0;')
-            ->setPage(25)
-            ->setLimit(30);
+            ->bind(['page' => 25, 'limit' => 30]);
 
         $tableData = Table::create(Request::uri(), __CLASS__)
             ->setClasses('table-striped table-bordered table-hover table-condensed')
