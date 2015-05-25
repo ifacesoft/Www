@@ -178,6 +178,16 @@ $ php composer.phar install --prefer-source</code></pre>
             </div>
         </div>
         <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <img src="/resource/img/denis_shestakov.jpg" alt="Ice PHP Framework developer - Denis Shestakov" style="width: 82px; float: left; margin-right: 10px;"/>
+                    <h5>Denis Shestakov (developer)</h5>
+                    <ul>
+                        <li>denis.a.shestakov@gmail.com</li>
+                        <li>https://twitter.com/dpssden</li>
+                    </ul>
+                </div>
+            </div>
             <script type="text/javascript">(function () {
                     if (window.pluso)if (typeof window.pluso.start == "function") return;
                     if (window.ifpluso == undefined) {

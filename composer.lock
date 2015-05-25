@@ -23,12 +23,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "bc45d9185513575434021527d7756420e9f4b2cf"
+                "reference": "69210d5bc130f8cc9f96f99582a041254d7b9833"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/bc45d9185513575434021527d7756420e9f4b2cf",
-                "reference": "bc45d9185513575434021527d7756420e9f4b2cf",
+                "url": "https://api.github.com/repos/composer/composer/zipball/69210d5bc130f8cc9f96f99582a041254d7b9833",
+                "reference": "69210d5bc130f8cc9f96f99582a041254d7b9833",
                 "shasum": ""
             },
             "require": {
@@ -86,7 +86,7 @@
                 "dependency",
                 "package"
             ],
-            "time": "2015-05-11 14:49:39"
+            "time": "2015-05-25 13:29:26"
         },
         {
             "name": "facebook/xhprof",
@@ -165,16 +165,16 @@
         },
         {
             "name": "ifacesoft/ice",
-            "version": "1.0.14",
+            "version": "1.0.18",
             "source": {
                 "type": "hg",
                 "url": "https://bitbucket.org/dp_ifacesoft/ice",
-                "reference": "7ae2789546cb10354ef1927f1350f3946cbe709b"
+                "reference": "267454b66acae5a0529e1af42e6d6adedb8ebe8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/dp_ifacesoft/ice/get/7ae2789546cb10354ef1927f1350f3946cbe709b.zip",
-                "reference": "7ae2789546cb10354ef1927f1350f3946cbe709b",
+                "url": "https://bitbucket.org/dp_ifacesoft/ice/get/267454b66acae5a0529e1af42e6d6adedb8ebe8e.zip",
+                "reference": "267454b66acae5a0529e1af42e6d6adedb8ebe8e",
                 "shasum": ""
             },
             "require": {
@@ -227,7 +227,7 @@
                 "orm",
                 "web"
             ],
-            "time": "2015-05-20 17:50:16"
+            "time": "2015-05-21 18:51:45"
         },
         {
             "name": "jquery/jquery-ui",
@@ -553,16 +553,16 @@
         },
         {
             "name": "smarty/smarty",
-            "version": "v3.1.23",
+            "version": "v3.1.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/smarty-php/smarty.git",
-                "reference": "04f0090c40b1a0e1fb55dbe0297f08386b36de21"
+                "reference": "b58771e31b11c721f6aa8e574e16e4058f9edc5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/04f0090c40b1a0e1fb55dbe0297f08386b36de21",
-                "reference": "04f0090c40b1a0e1fb55dbe0297f08386b36de21",
+                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/b58771e31b11c721f6aa8e574e16e4058f9edc5f",
+                "reference": "b58771e31b11c721f6aa8e574e16e4058f9edc5f",
                 "shasum": ""
             },
             "require": {
@@ -604,7 +604,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2015-05-12 02:08:22"
+            "time": "2015-05-23 17:22:14"
         },
         {
             "name": "symfony/console",
