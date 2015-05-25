@@ -180,12 +180,16 @@ $ php composer.phar install --prefer-source</code></pre>
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <img src="/resource/img/denis_shestakov.jpg" alt="Ice PHP Framework developer - Denis Shestakov" style="width: 82px; float: left; margin-right: 10px;"/>
-                    <h5>Denis Shestakov (developer)</h5>
+                    <a href="https://github.com/dp-ifacesoft" class="thumbnail" target="_blank" style="display: block; float: left; margin-right: 10px;">
+                        <img src="/resource/img/denis_shestakov.jpg" alt="Ice PHP Framework developer - Denis Shestakov"
+                             style="width: 57px;"/>
+                    </a>
+                    <h4 style="font-family: DaxlineBold;">Denis Shestakov (developer)</h4>
                     <ul>
                         <li>denis.a.shestakov@gmail.com</li>
                         <li>https://twitter.com/dpssden</li>
                     </ul>
+                    <a href="https://gratipay.com/~dpssden/"><img src="//img.shields.io/gratipay/dpssden.svg"></a>
                 </div>
             </div>
             <script type="text/javascript">(function () {
@@ -209,8 +213,6 @@ $ php composer.phar install --prefer-source</code></pre>
             {*<div style="margin-top: 12px;">*}
             {*{$Feedback[0]}*}
             {*</div>*}
-
-
 
             <div style="clear: both; padding-top: 20px;" class="panel-group" id="accordion" role="tablist"
                  aria-multiselectable="true">
